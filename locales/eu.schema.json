@@ -249,6 +249,8 @@
     "show_physical_stores_help": "Zerrendatu produktua izakinetan duten eta erakusleiho fisiko gisa markatutako kokapenak ere, bilketa eskaintzen ez badute ere."
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "Zutabea",
     "product_title": "Produktuaren izenburua",
     "custom_liquid": "Liquid pertsonalizatua",
@@ -697,6 +699,8 @@
     "below_media": "Multimedia-edukiaren azpian"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

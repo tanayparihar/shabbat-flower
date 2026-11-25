@@ -249,6 +249,8 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "Kolona",
     "product_title": "Naziv proizvoda",
     "custom_liquid": "Prilagođeni Liquid",
@@ -697,6 +699,8 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

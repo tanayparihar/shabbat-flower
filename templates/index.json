@@ -758,10 +758,64 @@
         "padding-block-start": 100,
         "padding-block-end": 100
       }
+    },
+    "how_it_works": {
+      "type": "how-it-works",
+      "blocks": {
+        "step_collection": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step1_choose_collection.svg",
+            "title": "Choose your collection",
+            "description": "Colores de Temporada or Lavan."
+          }
+        },
+        "step_style": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step2_choose_style.svg",
+            "title": "Pick your style and size",
+            "description": "Wrapped bouquet or centrepiece. Size: Intimate, Abundant or Statement."
+          }
+        },
+        "step_arranged": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step3_we_condition.svg",
+            "title": "Arranged by hand",
+            "description": "Market fresh. Conditioned and arranged by hand in our studio."
+          }
+        },
+        "step_delivery": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step4_arriving.svg",
+            "title": "Arrives Friday morning",
+            "description": "Free delivery. Fresh, wrapped, ready for your table."
+          }
+        }
+      },
+      "block_order": [
+        "step_collection",
+        "step_style",
+        "step_arranged",
+        "step_delivery"
+      ],
+      "settings": {
+        "eyebrow": "Your Friday flowers in 4 steps",
+        "heading": "How it works",
+        "button_label": "Subscribe",
+        "button_link": "shopify://pages/subscribe",
+        "note": "Skip, pause or cancel any time after your first 4 deliveries. Subscribers get insider discounts and other benefits.",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "collections"
+    "collections",
+    "how_it_works"
   ]
 }

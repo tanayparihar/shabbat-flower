@@ -249,6 +249,8 @@
     "show_physical_stores_help": "إدراج المواقع المحددة كواجهة متجر فعلية والتي يتوفر فيها المنتج في المخزون أيضًا، حتى عندما لا توفر استلام الطلب."
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "عمود",
     "product_title": "عنوان المنتج",
     "custom_liquid": "Liquid مخصص",
@@ -697,6 +699,8 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

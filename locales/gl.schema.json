@@ -249,6 +249,8 @@
     "show_physical_stores_help": "Listar tamén as localizacións marcadas como escaparate físico que teñan o produto en stock, aínda que non ofrezan a recollida."
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "Columna",
     "product_title": "Título do produto",
     "custom_liquid": "Liquid personalizado",
@@ -697,6 +699,8 @@
     "below_media": "Baixo o elemento multimedia"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

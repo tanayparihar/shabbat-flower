@@ -249,6 +249,8 @@
     "show_physical_stores_help": "ایسی لوکیشن کو بھی فہرست میں شامل کریں جو فزیکل اسٹور فرنٹ کے طور پر نشان زد ہیں اور جہاں پروڈکٹ اسٹاک میں موجود ہے، چاہے وہ پک اپ کی سہولت فراہم نہ کرتی ہوں۔"
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "کالم",
     "product_title": "پروڈکٹ کا ٹائٹل",
     "custom_liquid": "کسٹم Liquid",
@@ -697,6 +699,8 @@
     "below_media": "میڈیا کے نیچے"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "404": "404",
     "custom_section": "Aangepaste sectie",
     "icon": "Pictogram",
@@ -171,6 +173,8 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

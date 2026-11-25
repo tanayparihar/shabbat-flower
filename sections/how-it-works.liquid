@@ -1,0 +1,349 @@
+{% comment %}
+  Section contract.
+  Shows a numbered process: a label, a heading, a row of steps joined by a line,
+  an optional button and a closing note. Steps are section blocks, numbered in
+  the order the merchant arranges them. Reusable on any page.
+
+  @example
+  <!-- Add "How it works" in the theme editor, then add one Step block per step -->
+{% endcomment %}
+
+{% liquid
+  assign section_settings = section.settings
+  assign custom_class = ''
+  if section_settings.background_color != blank
+    assign custom_class = 'color-custom-' | append: section.id
+    render 'contrast-override', background_color: section_settings.background_color, section_id: section.id
+  endif
+%}
+
+<div class="section-background {{ custom_class }}"></div>
+<div
+  class="section section--page-width how-it-works {{ custom_class }}"
+  style="
+    --how-padding-start: {{ section_settings.padding_start }}px;
+    --how-padding-end: {{ section_settings.padding_end }}px;
+    --how-background: {{ section_settings.background_color | default: 'var(--color-background)' }};
+    --how-columns: {{ section.blocks.size | at_least: 1 | at_most: 4 }};
+  "
+>
+  <div class="how-it-works__content">
+    {% if section_settings.eyebrow != blank or section_settings.heading != blank %}
+      <div class="how-it-works__header">
+        {% if section_settings.eyebrow != blank %}
+          <p class="how-it-works__eyebrow">{{ section_settings.eyebrow | escape }}</p>
+        {% endif %}
+        {% if section_settings.heading != blank %}
+          <h2 class="how-it-works__heading">{{ section_settings.heading | escape }}</h2>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <ol
+        class="how-it-works__steps list-unstyled"
+        role="list"
+      >
+        {% for block in section.blocks %}
+          <li
+            class="how-it-works__step"
+            {{ block.shopify_attributes }}
+          >
+            <span class="how-it-works__number">
+              {%- if forloop.index < 10 %}0{% endif %}{{ forloop.index -}}
+            </span>
+            <div class="how-it-works__icon-row">
+              <div class="how-it-works__icon">
+                {% if block.settings.icon != blank %}
+                  {{
+                    block.settings.icon
+                    | image_url: width: 400
+                    | image_tag: widths: '200, 400', sizes: '180px', alt: '', loading: 'lazy'
+                  }}
+                {% endif %}
+              </div>
+            </div>
+            {% if block.settings.title != blank %}
+              <h3 class="how-it-works__title">{{ block.settings.title | escape }}</h3>
+            {% endif %}
+            {% if block.settings.description != blank %}
+              <p class="how-it-works__description">{{ block.settings.description | escape | newline_to_br }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+
+    {% assign has_button = false %}
+    {% if section_settings.button_label != blank and section_settings.button_link != blank %}
+      {% assign has_button = true %}
+    {% endif %}
+
+    {% if has_button or section_settings.note != blank %}
+      <div class="how-it-works__footer">
+        {% if has_button %}
+          <a
+            class="button how-it-works__button"
+            href="{{ section_settings.button_link }}"
+          >
+            {{- section_settings.button_label | escape -}}
+          </a>
+        {% endif %}
+        {% if section_settings.note != blank %}
+          <p class="how-it-works__note">{{ section_settings.note | escape | newline_to_br }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .how-it-works__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    min-width: 0;
+    padding-block: min(var(--how-padding-start), 4rem) min(var(--how-padding-end), 4rem);
+    text-align: center;
+  }
+
+  .how-it-works__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .how-it-works__header > *,
+  .how-it-works__step > *,
+  .how-it-works__footer > * {
+    margin: 0;
+  }
+
+  .how-it-works__eyebrow {
+    font-family: var(--font-h6--family);
+    font-size: var(--font-h6--size);
+    font-weight: var(--font-h6--weight);
+    line-height: var(--font-h6--line-height);
+    letter-spacing: var(--font-h6--letter-spacing);
+    text-transform: var(--font-h6--case);
+    color: var(--color-brand-berry);
+  }
+
+  .how-it-works__heading {
+    color: var(--color-brand-forest);
+  }
+
+  .how-it-works__steps {
+    --how-gap: 2.5rem;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem var(--how-gap);
+    margin: 0;
+  }
+
+  .how-it-works__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-width: 0;
+  }
+
+  .how-it-works__number {
+    font-family: var(--font-h3--family);
+    font-size: var(--font-h3--size);
+    font-weight: var(--font-h3--weight);
+    line-height: 1.2;
+  }
+
+  .how-it-works__icon-row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+  }
+
+  .how-it-works__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding-inline: 0.75rem;
+    background-color: var(--how-background);
+  }
+
+  .how-it-works__icon img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .how-it-works__description {
+    max-width: 18.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    color: var(--color-foreground);
+    text-wrap: balance;
+  }
+
+  .how-it-works__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+    margin-block-start: 1.25rem;
+  }
+
+  .how-it-works__note {
+    max-width: 36rem;
+    text-wrap: balance;
+  }
+
+  /* The line joining the steps, drawn behind each icon */
+  @media screen and (min-width: 750px) {
+    .how-it-works__content {
+      padding-block: var(--how-padding-start) var(--how-padding-end);
+    }
+
+    .how-it-works__steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .how-it-works__icon-row::before {
+      content: '';
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline: calc(var(--how-gap) / -2);
+      height: 1px;
+      background-color: var(--color-brand-berry);
+    }
+
+    .how-it-works__step:nth-child(odd) .how-it-works__icon-row::before {
+      inset-inline-start: 0;
+    }
+
+    .how-it-works__step:nth-child(even) .how-it-works__icon-row::before,
+    .how-it-works__step:last-child .how-it-works__icon-row::before {
+      inset-inline-end: 0;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .how-it-works__steps {
+      grid-template-columns: repeat(var(--how-columns), minmax(0, 1fr));
+    }
+
+    .how-it-works__step:nth-child(n) .how-it-works__icon-row::before {
+      inset-inline: calc(var(--how-gap) / -2);
+    }
+
+    .how-it-works__step:nth-child(4n + 1) .how-it-works__icon-row::before {
+      inset-inline-start: 0;
+    }
+
+    .how-it-works__step:nth-child(4n) .how-it-works__icon-row::before,
+    .how-it-works__step:last-child .how-it-works__icon-row::before {
+      inset-inline-end: 0;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.how_it_works",
+  "class": "section-wrapper",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "type": "step",
+      "name": "t:names.step",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "t:settings.icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:settings.title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "t:settings.text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "t:settings.eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:settings.heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:settings.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:settings.link"
+    },
+    {
+      "type": "textarea",
+      "id": "note",
+      "label": "t:settings.note"
+    },
+    {
+      "type": "header",
+      "content": "t:content.appearance"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "default": "{{ settings.color_palette.color4 }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.how_it_works",
+      "category": "t:categories.text",
+      "blocks": [{ "type": "step" }, { "type": "step" }, { "type": "step" }, { "type": "step" }]
+    }
+  ]
+}
+{% endschema %}

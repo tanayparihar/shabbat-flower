@@ -249,6 +249,8 @@
     "show_physical_stores_help": "जरी तेथे पिकअपची सुविधा नसली, तरीही प्रत्यक्ष स्टोअरफ्रंट म्हणून चिन्हांकित केलेली आणि उत्पादन स्टॉकमध्ये असलेली ठिकाणे देखील सूचीबद्ध करा."
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "कॉलम",
     "product_title": "उत्पादन शीर्षक",
     "custom_liquid": "कस्टम Liquid",
@@ -697,6 +699,8 @@
     "below_media": "मीडियाच्या खाली"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

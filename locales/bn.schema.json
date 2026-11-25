@@ -249,6 +249,8 @@
     "show_physical_stores_help": "পিকআপ অফার না করলেও, ফিজিক্যাল স্টোরফ্রন্ট হিসেবে চিহ্নিত এবং পণ্যটি স্টকে আছে এমন লোকেশনগুলোও তালিকাভুক্ত করুন।"
   },
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "column": "কলাম",
     "product_title": "পণ্যের শিরোনাম",
     "custom_liquid": "Custom Liquid",
@@ -697,6 +699,8 @@
     "below_media": "মিডিয়ার নিচে"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",

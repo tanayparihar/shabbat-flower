@@ -9,6 +9,8 @@
  */
 {
   "names": {
+    "how_it_works": "How it works",
+    "step": "Step",
     "404": "404",
     "colors": "Farvepalet",
     "custom_section": "Brugerdefineret sektion",
@@ -171,6 +173,8 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "eyebrow": "Small label",
+    "note": "Closing note",
     "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",
