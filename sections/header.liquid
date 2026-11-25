@@ -189,6 +189,8 @@
 
   if section.settings.section_height == 'compact'
     assign header_height_class = ' header--compact'
+  elsif section.settings.section_height == 'large'
+    assign header_height_class = ' header--large'
   endif
 
   if bottom_row_blocks.size > 0 and section.settings.background_color_top == section.settings.background_color_bottom and section.settings.divider_width == 0
@@ -1260,6 +1262,68 @@
     font-family: var(--menu-localization-font);
     font-size: var(--menu-localization-font-size);
   }
+
+  /* Large header: 124px tall with a 100px logo */
+  .header.header--large {
+    --header-padding: 0.75rem;
+  }
+
+  .header--large .header__row--top .header__columns {
+    box-sizing: border-box;
+    min-height: 7.75rem;
+    align-content: center;
+  }
+
+  .header--large .menu-list__link {
+    letter-spacing: 0.01em;
+  }
+
+  .header--large .menu-list .menu-list__list-item .menu-list__link {
+    color: var(--color-foreground);
+  }
+
+  .header--large .menu-list .menu-list__list-item:is(:hover, :focus-within) .menu-list__link {
+    color: var(--color-brand-berry);
+  }
+
+  .header--large .menu-list__link-title {
+    padding-inline: clamp(0.7rem, 1.5vw, 1.3125rem);
+  }
+
+  .header--large [slot='overflow'] .menu-list__link-title {
+    padding-inline: 0;
+  }
+
+  /* Keep the submenu arrow visible next to its parent link */
+  @media screen and (min-width: 750px) {
+    .header--large .menu-list__disclosure {
+      opacity: 1;
+      inset-inline-start: calc(100% - 1.125rem);
+    }
+
+    .header--large .menu-list__disclosure-icon {
+      width: 0.75rem;
+    }
+
+    .header--large header-actions {
+      gap: 1rem;
+      margin-inline-end: -0.5rem;
+    }
+  }
+
+  .header--large .header-actions__cart-icon svg {
+    --icon-stroke-width: 2px;
+  }
+
+  .header--large .account-button__icon {
+    width: 1.3125rem;
+    height: 1.5rem;
+  }
+
+  .header--large .header-actions__action {
+    --icon-size-md: 1.75rem;
+    --icon-size-lg: 1.75rem;
+  }
 {% endstylesheet %}
 
 {% unless request.design_mode %}
@@ -1542,6 +1606,10 @@
         {
           "value": "standard",
           "label": "t:options.standard"
+        },
+        {
+          "value": "large",
+          "label": "t:options.large"
         }
       ],
       "default": "standard"

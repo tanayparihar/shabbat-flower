@@ -9,10 +9,10 @@
  */
 {
   "current": {
-    "logo_height": 36,
-    "logo_height_mobile": 28,
+    "logo_height": 100,
+    "logo_height_mobile": 100,
     "page_background_color": "{{ settings.color_palette.background }}",
-    "page_width": "normal",
+    "page_width": "narrow",
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "type_body_font": "plus_jakarta_sans_n4",
     "type_subheading_font": "plus_jakarta_sans_n6",
@@ -128,7 +128,12 @@
     "type_letter_spacing_h5": "heading-normal",
     "type_case_h5": "none",
     "type_letter_spacing_h6": "heading-label",
-    "type_case_h6": "uppercase"
+    "type_case_h6": "uppercase",
+    "logo": "shopify://shop_images/SFC_logo_black.svg",
+    "logo_inverse": "shopify://shop_images/SFC_logo_white.svg",
+    "page_margin_desktop": 72,
+    "page_margin_tablet": 40,
+    "page_margin_mobile": 20
   },
   "presets": {
     "Horizon": {

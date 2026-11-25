@@ -171,6 +171,9 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "page_margin_desktop": "Side padding on desktop",
+    "page_margin_tablet": "Side padding on tablet",
+    "page_margin_mobile": "Side padding on phone",
     "marquee": "Scroll text from right to left",
     "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",

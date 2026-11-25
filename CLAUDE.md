@@ -9,6 +9,15 @@ Custom storefront for Shabbat Flowers Club, built as a restyle and extension of 
 - Make the smallest change that achieves the design. Don't refactor Horizon code that isn't involved.
 - Never commit or push any changes. Only the code owner does that.
 
+## Portability
+
+The theme is built on a development account and will later move to the client's store. It must work there without code changes.
+
+- Never hardcode store domains, theme IDs, resource IDs (products, variants, collections, selling plans, app blocks) or `cdn.shopify.com` URLs in theme files.
+- Reference store content through theme editor settings. In JSON, use handle-based references only (`shopify://shop_images/<file>`, menu, collection, product and page handles).
+- Images come from the local `shabbat-asset/` folder (not committed) and keep their original names. Shopify Files is flat and converts spaces and symbols to underscores (`hero image_home_mobile.jpg` becomes `hero_image_home_mobile.jpg`). Upload the same originals to both stores, with unique names, and reference the stored name.
+- When code or JSON starts depending on a file, menu, product, collection, page, metafield or app, add it to the migration checklist in `MIGRATION.md`.
+
 ## Environment
 
 - Store: `shabbat-flowers-ketjs3bi.myshopify.com`

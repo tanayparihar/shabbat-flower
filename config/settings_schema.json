@@ -1257,6 +1257,36 @@
           }
         ],
         "default": "narrow"
+      },
+      {
+        "type": "range",
+        "id": "page_margin_desktop",
+        "label": "t:settings.page_margin_desktop",
+        "min": 16,
+        "max": 96,
+        "step": 4,
+        "unit": "px",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "page_margin_tablet",
+        "label": "t:settings.page_margin_tablet",
+        "min": 16,
+        "max": 64,
+        "step": 4,
+        "unit": "px",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "page_margin_mobile",
+        "label": "t:settings.page_margin_mobile",
+        "min": 8,
+        "max": 32,
+        "step": 4,
+        "unit": "px",
+        "default": 16
       }
     ]
   },
