@@ -697,6 +697,9 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "text_above_media_on_mobile": "Show text above the image on phones",
+    "media_position_x": "Image focus, left to right",
+    "media_position_y": "Image focus, top to bottom",
     "column_layout": "Column layout",
     "show_heading": "Show heading",
     "page_margin_desktop": "Side padding on desktop",

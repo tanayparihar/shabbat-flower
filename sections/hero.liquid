@@ -461,12 +461,13 @@
 
 <div
   id="Hero-{{ section.id }}"
-  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}"
+  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}{% if section.settings.text_above_media_on_mobile %} hero--text-above-mobile{% endif %}"
   style="
     --hero-border-style: {{ section.settings.border }};
     --hero-border-width: {{ section.settings.border_width }}px;
     --hero-border-opacity: {{ section.settings.border_opacity }}%;
     --blur-opacity: {{ section.settings.reflection_opacity | divided_by: 100.0 }};
+    --hero-media-position: {{ section.settings.media_position_x }}% {{ section.settings.media_position_y }}%;
     {% if section.settings.section_height == 'custom' %}
       --hero-min-height: {{ section.settings.section_height_custom }}svh;
     {% elsif section.settings.section_height == "full-screen" %}
@@ -636,7 +637,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: var(--hero-media-position, center center);
     overflow: hidden;
     position: relative;
     z-index: var(--layer-base);
@@ -669,6 +670,33 @@
     .hero--stack-mobile .hero__media-grid {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(var(--hero-media-count-mobile, 1), calc(100% / var(--hero-media-count-mobile, 1)));
+    }
+  }
+
+  /* Phones: text on a plain background with the image underneath, so neither covers the other */
+  @media screen and (max-width: 749px) {
+    .hero.hero--text-above-mobile {
+      min-height: 0;
+    }
+
+    .hero--text-above-mobile .hero__container {
+      min-height: 0;
+    }
+
+    .hero--text-above-mobile .hero__content-wrapper {
+      grid-row: 1;
+      margin-block-end: 2.5rem;
+    }
+
+    .hero--text-above-mobile .hero__media-grid {
+      position: relative;
+      grid-row: 2;
+      aspect-ratio: 1;
+      margin-block-end: calc(-1 * var(--padding-block-end, 0px));
+    }
+
+    .hero--text-above-mobile .text-block.h1 > * {
+      font-size: min(var(--font-size--h1), 9.5vw);
     }
   }
 
@@ -1151,6 +1179,32 @@
         }
       ],
       "default": "medium"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_above_media_on_mobile",
+      "label": "t:settings.text_above_media_on_mobile",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "media_position_x",
+      "label": "t:settings.media_position_x",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "media_position_y",
+      "label": "t:settings.media_position_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
     },
     {
       "type": "range",
