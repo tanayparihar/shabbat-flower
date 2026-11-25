@@ -426,6 +426,8 @@
     "comparison_slider": "Comparison slider"
   },
   "options": {
+    "equal_columns": "Equal columns",
+    "narrow_second_column": "Narrow second column",
     "snug": "Snug",
     "extra_loose": "Extra loose",
     "above_carousel": "Above carousel",
@@ -753,6 +755,8 @@
     "below_media": "Below media"
   },
   "settings": {
+    "column_layout": "Column layout",
+    "show_heading": "Show heading",
     "page_margin_desktop": "Side padding on desktop",
     "page_margin_tablet": "Side padding on tablet",
     "page_margin_mobile": "Side padding on phone",

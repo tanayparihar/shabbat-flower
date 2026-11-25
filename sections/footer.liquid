@@ -39,6 +39,7 @@
     class="
       footer-content
       spacing-style
+      {% if section.settings.column_layout == 'split' %}footer-content--split{% endif %}
       {% if has_isolated_grid_item_desktop %}footer-content--isolated-grid-item-desktop{% endif %}
       {% if has_isolated_grid_item_tablet %}footer-content--isolated-grid-item-tablet{% endif %}
     "
@@ -96,6 +97,14 @@
     .footer-content--isolated-grid-item-desktop > :last-child {
       grid-column: 1 / -1;
     }
+
+    .footer-content.footer-content--split {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 35rem);
+    }
+  }
+
+  .footer-content--split .social-icons__wrapper {
+    gap: 1.25rem;
   }
 {% endstylesheet %}
 
@@ -166,6 +175,22 @@
         }
       ],
       "default": "page-width"
+    },
+    {
+      "type": "select",
+      "id": "column_layout",
+      "label": "t:settings.column_layout",
+      "options": [
+        {
+          "value": "equal",
+          "label": "t:options.equal_columns"
+        },
+        {
+          "value": "split",
+          "label": "t:options.narrow_second_column"
+        }
+      ],
+      "default": "equal"
     },
     {
       "type": "range",

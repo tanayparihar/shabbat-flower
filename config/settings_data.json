@@ -111,7 +111,9 @@
       "color4": "#F9E1E1",
       "color5": "#FFFFFF",
       "color6": "#1C1A18",
-      "color7": "#A8235A"
+      "color7": "#A8235A",
+      "color8": "#2F4B3C",
+      "color9": "#CCD7CC"
     },
     "page_heading_color": "{{ settings.color_palette.color1 }}",
     "type_heading_spectral": true,
