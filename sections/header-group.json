@@ -40,7 +40,7 @@
         "divider_color": "{{ settings.color_palette.color2 }}",
         "padding-block-start": 12,
         "padding-block-end": 12,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "marquee": true,
         "marquee_duration": 20
       }
@@ -63,7 +63,7 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "type_font_primary_size": "1.125rem",
+            "type_font_primary_size": "0.9375rem",
             "menu_font_style": "inverse",
             "type_font_primary_link": "subheading",
             "type_case_primary_link": "none",

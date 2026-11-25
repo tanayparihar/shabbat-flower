@@ -1287,7 +1287,7 @@
   }
 
   .header--large .menu-list__link-title {
-    padding-inline: clamp(0.7rem, 1.5vw, 1.3125rem);
+    padding-inline: clamp(0.6rem, 1.25vw, 1.125rem);
   }
 
   .header--large [slot='overflow'] .menu-list__link-title {
@@ -1323,6 +1323,73 @@
   .header--large .header-actions__action {
     --icon-size-md: 1.75rem;
     --icon-size-lg: 1.75rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .header.header--large {
+      --header-padding: 0.25rem;
+    }
+
+    .header--large .header__row--top .header__columns {
+      min-height: 4rem;
+    }
+  }
+
+  /* Once the page is scrolled, the large header becomes a slim, translucent bar */
+  #header-component:is([data-scroll-direction='up'], [data-scroll-direction='down']) .header--large,
+  .header--large:is([data-scroll-direction='up'], [data-scroll-direction='down']) {
+    .header__row--top .header__columns {
+      min-height: 4.25rem;
+    }
+
+    .header-logo__image {
+      width: auto;
+      height: 2.75rem;
+    }
+
+    /* The menu keeps its first measured height inline, so it has to be overridden */
+    .overflow-menu::part(list) {
+      /* stylelint-disable-next-line declaration-no-important */
+      height: 2.75rem !important;
+    }
+
+    .header__underlay-closed {
+      background: rgb(var(--color-background-rgb) / 0.82);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgb(var(--color-brand-warm-dark-rgb) / var(--opacity-5));
+    }
+
+    @media screen and (max-width: 749px) {
+      .header__row--top .header__columns {
+        min-height: 3.5rem;
+      }
+
+      .header-logo__image {
+        height: 3rem;
+      }
+    }
+  }
+
+  /* Keep the page height steady while the bar shrinks, so scrolling does not jump */
+  .header-section:has(
+    > #header-component:is([data-scroll-direction='up'], [data-scroll-direction='down']) .header--large,
+    > .header--large:is([data-scroll-direction='up'], [data-scroll-direction='down'])
+  ) {
+    margin-block-end: 3.5rem;
+
+    @media screen and (max-width: 749px) {
+      margin-block-end: 0.25rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .header--large .header__row--top .header__columns {
+      transition: min-height var(--animation-speed-slow) var(--ease-out-cubic);
+    }
+
+    .header--large .header-logo__image {
+      transition: height var(--animation-speed-slow) var(--ease-out-cubic);
+    }
   }
 {% endstylesheet %}
 

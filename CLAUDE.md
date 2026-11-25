@@ -72,14 +72,15 @@ Use colors exactly as Framer does. Berry and Raspberry are near-duplicates: Berr
 - Project: `web_sfc_home (copy 2)`, id `XqtKiuCGIADrOGyRBSYM`
 - URL: https://framer.com/projects/XqtKiuCGIADrOGyRBSYM
 - If the Framer MCP server is connected, open the project and read the page frames for exact spacing, copy and structure. Do not modify the Framer project.
-- Homepage: `/sfc-home-reference` (developer guide) and `/homepage-copy` are the same design. Build from `/sfc-home-reference` because it has the desktop, wide, tablet and phone breakpoints; `/homepage-copy` is desktop only.
+- Homepage: build from `/homepage-copy` and its header and footer components (the latest design). `/sfc-home-reference` is older; use it only as a hint for tablet and phone layouts.
+- `Designer-Instructions.md` records the latest design changes and wins over older Framer values.
 - Skip the helper page `/consultations-for-image-placement-only`.
 
 ## Pages and their Framer sections
 
 | Path | Framer sections |
 |---|---|
-| `/sfc-home-reference` (homepage; `/` is an empty frame) | Hero, Collections, How It Works, Separator, Gift, Special occasion flowers, Joanne Story, Workshops and Consultations, Fresh from the Studio, What They Say, Order Once Teaser, Sister Brand, Closing CTA |
+| `/homepage-copy` (homepage; `/` is an empty frame) | Hero, Collections, How It Works, Separator, Gift, Special occasion flowers, Joanne Story, Workshops and Consultations, Fresh from the Studio, What They Say, Order Once Teaser, Sister Brand, Closing CTA |
 | `/subscribe` | Subscription Hero, What is Shabbat Flowers Club, Collections, Build your subscription, Complete your Friday table, How It Works, Gift Subscription Callout, NefeshJardin Cards, Club Insider Benefits, Flower Care, What They Say, Questions answered, Your Friday Table CTA |
 | `/gift-subscription` | Subscription Hero, What is Shabbat Flowers Club, Collections, Build your gift, How It Works, Club Insider Benefits, NefeshJardin Cards, Complete your Friday table, Flower Care, Questions answered, Your Friday Table CTA |
 | `/order-once` | Subscription Hero, Choose your composition, Delivery information, Complete your Friday table, NefeshJardin Cards, Flower Care, Questions answered, Your Friday Table CTA |
