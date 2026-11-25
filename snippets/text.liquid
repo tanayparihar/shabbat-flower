@@ -47,6 +47,9 @@
     if block_settings.background
       echo ' text-block--background '
     endif
+    if block_settings.max_lines != blank and block_settings.max_lines != '0'
+      echo ' text-block--clamp '
+    endif
     if is_rte
       echo ' rte '
     endif
@@ -67,6 +70,9 @@
     {% endif %}
 
     --width: {{ text_width }};
+    {% if block_settings.max_lines != blank and block_settings.max_lines != '0' %}
+      --line-clamp: {{ block_settings.max_lines }};
+    {% endif %}
     --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
     {% if text_width == "100%" %}
       --text-align: {{ block_settings.alignment | replace: 'left', 'start' | replace: 'right', 'end' }};

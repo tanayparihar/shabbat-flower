@@ -697,6 +697,7 @@
     "below_media": "მედიის ქვემოთ"
   },
   "settings": {
+    "max_lines": "Line limit on larger screens",
     "text_above_media_on_mobile": "Show text above the image on phones",
     "media_position_x": "Image focus, left to right",
     "media_position_y": "Image focus, top to bottom",

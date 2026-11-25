@@ -1194,6 +1194,11 @@ summary:hover {
   border-radius: var(--border-radius);
 }
 
+/* Button rows move buttons to a new line instead of squeezing their labels */
+.layout-panel-flex--row:has(> .button, > .button-secondary) {
+  flex-wrap: wrap;
+}
+
 /* Gap scaling style */
 .gap-style,
 .layout-panel-flex {

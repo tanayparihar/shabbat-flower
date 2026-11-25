@@ -16,6 +16,15 @@
 {%- enddoc -%}
 
 {% stylesheet %}
+  @media screen and (min-width: 750px) {
+    .text-block--clamp > * {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: var(--line-clamp);
+      overflow: hidden;
+    }
+  }
+
   .text-block {
     width: var(--width, 100%);
   }

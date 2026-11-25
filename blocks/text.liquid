@@ -294,6 +294,26 @@
       "visible_if": "{{ block.settings.type_preset == 'custom' }}"
     },
     {
+      "type": "select",
+      "id": "max_lines",
+      "label": "t:settings.max_lines",
+      "options": [
+        {
+          "value": "0",
+          "label": "t:options.none"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "0"
+    },
+    {
       "type": "header",
       "content": "t:content.appearance"
     },
