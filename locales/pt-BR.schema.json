@@ -171,6 +171,10 @@
     "disclosures": "Divulgações"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "Alinhamento",
     "autoplay": "Reprodução automática",
     "background": "Plano de fundo",
@@ -588,6 +592,8 @@
     "show_physical_stores": "Exibir lojas físicas"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "Seta",
     "auto": "Automático",
@@ -870,6 +876,7 @@
     "direction_top_start": "Superior à esquerda"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "Avançado",
     "background_image": "Imagem de fundo",
     "background_video": "Vídeo de fundo",
@@ -1093,6 +1100,7 @@
     "disclosures": "Divulgações"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "Descreva o vídeo para usuários de tecnologia assistiva",
     "video_autoplay": "Os vídeos ficarão sem som por padrão",
     "video_external": "Use um URL do YouTube ou do Vimeo",

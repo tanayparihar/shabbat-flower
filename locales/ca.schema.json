@@ -30,6 +30,7 @@
     "text": "Text"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "Visible si la col·lecció té més productes dels que es mostren",
     "advanced": "Avançat",
     "appearance": "Aparença",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>Treballarem ràpidament per enviar la comanda al més aviat possible. Quan s'hagi enviat la comanda, rebràs un correu electrònic amb més informació. Els terminis de lliurament varien en funció de la teva ubicació.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Les icones s'utilitzen sempre a la versió per a mòbils",
     "applies_on_image_only": "Només s'aplica a les imatges",
     "aspect_ratio_adjusted": "Ajustada en alguns dissenys",
@@ -408,6 +410,8 @@
     "comparison_slider": "Control lliscant de comparació"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "A sobre del carrusel",
     "accent": "Accent",
     "all": "Tots",
@@ -690,6 +694,10 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "Acordió",
     "account": "Compte",
     "actions_display_style": "Estil del menú",

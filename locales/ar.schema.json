@@ -30,6 +30,7 @@
     "text": "نص"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "مرئي إذا كانت المجموعة تحتوي على منتجات أكثر من المعروضة",
     "advanced": "متقدم",
     "appearance": "المظهر",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>سنعمل بسرعة لشحن طلبك في أقرب وقت ممكن. بمجرد شحن طلبك، ستتلقى رسالة بريد إلكتروني تحتوي على مزيد من المعلومات. تختلف أوقات التوصيل حسب موقعك.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "تُستخدم الأيقونات دائماً على الهاتف المحمول",
     "applies_on_image_only": "ينطبق على الصور فقط",
     "aspect_ratio_adjusted": "معدل في بعض التخطيطات",
@@ -408,6 +410,8 @@
     "comparison_slider": "شريط تمرير المقارنة"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "أعلى العرض الدائري",
     "accent": "تمييز",
     "all": "الكل",
@@ -690,6 +694,10 @@
     "below_media": "أسفل الوسائط"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "أكورديون",
     "account": "حساب",
     "actions_display_style": "نمط القائمة",

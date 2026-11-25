@@ -171,6 +171,10 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "對齊",
     "autoplay": "自動播放",
     "background": "背景",
@@ -588,6 +592,8 @@
     "show_physical_stores": "顯示實體店面"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "箭頭",
     "auto": "自動",
@@ -870,6 +876,7 @@
     "direction_top_start": "左上"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "進階",
     "background_image": "背景圖片",
     "background_video": "背景影片",
@@ -1093,6 +1100,7 @@
     "disclosures": "資訊揭露"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "carousel_layout_on_mobile": "在行動裝置上一律使用輪播",
     "video_alt_text": "為使用輔助技術的使用者描述影片",
     "video_autoplay": "影片預設為靜音播放",

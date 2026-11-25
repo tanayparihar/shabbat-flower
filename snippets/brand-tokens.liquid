@@ -1,0 +1,74 @@
+{% doc %}
+  Outputs Shabbat Flowers brand CSS variables and, when enabled in theme settings,
+  the self-hosted Spectral heading font. Render after `color-palette`.
+
+  @example
+  {% render 'brand-tokens' %}
+{% enddoc %}
+
+{% style %}
+  {% if settings.type_heading_spectral %}
+    {%- liquid
+      assign faces = '400:normal,400:italic,500:normal,600:normal' | split: ','
+      assign subsets = 'latin,latin-ext' | split: ','
+    -%}
+    {%- for face in faces -%}
+      {%- assign parts = face | split: ':' -%}
+      {%- for subset in subsets -%}
+        {%- assign file_name = 'spectral-' | append: parts[0] | append: '-' | append: parts[1] | append: '-' | append: subset | append: '.woff2' -%}
+        @font-face {
+          font-family: Spectral;
+          font-style: {{ parts[1] }};
+          font-weight: {{ parts[0] }};
+          font-display: swap;
+          src: url('{{ file_name | asset_url }}') format('woff2');
+          {% if subset == 'latin' %}
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          {% else %}
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+          {% endif %}
+        }
+      {%- endfor -%}
+    {%- endfor -%}
+
+    :root {
+      --font-heading--family: Spectral, Georgia, serif;
+      --font-heading--style: normal;
+      --font-heading--weight: 500;
+      {% if settings.type_font_h1 == 'heading' %}
+        --font-h1--weight: 400;
+      {% endif %}
+    }
+  {% endif %}
+
+  :root {
+    /* Brand colors, edited in Theme settings > Colors */
+    --color-brand-forest: {{ settings.color_palette.color1 }};
+    --color-brand-forest-rgb: {{ settings.color_palette.color1.rgb }};
+    --color-brand-raspberry: {{ settings.color_palette.color7 }};
+    --color-brand-raspberry-rgb: {{ settings.color_palette.color7.rgb }};
+    --color-brand-placeholder: {{ settings.color_palette.color2 }};
+    --color-brand-berry: {{ settings.color_palette.color3 }};
+    --color-brand-berry-rgb: {{ settings.color_palette.color3.rgb }};
+    --color-brand-blush: {{ settings.color_palette.color4 }};
+    --color-brand-white: {{ settings.color_palette.color5 }};
+    --color-brand-warm-dark: {{ settings.color_palette.color6 }};
+    --color-brand-warm-dark-rgb: {{ settings.color_palette.color6.rgb }};
+    {% if settings.page_heading_color != blank %}
+      --color-foreground-heading: {{ settings.page_heading_color }};
+    {% endif %}
+
+    /* Layout rhythm */
+    --brand-content-max-width: 112.5rem;
+    --brand-section-padding-block: clamp(3.5rem, 7vw, 6.25rem);
+    --brand-section-padding-inline: clamp(1.25rem, 4.2vw, 3.75rem);
+    --brand-radius-md: 0.75rem;
+    --brand-radius-lg: 1rem;
+    --brand-radius-pill: 6.25rem;
+  }
+
+  /* Sections with their own colors keep their own heading color */
+  [class*='color-custom-'] {
+    --color-foreground-heading: initial;
+  }
+{% endstyle %}

@@ -171,6 +171,10 @@
     "disclosures": "披露信息"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "对齐方式",
     "autoplay": "自动播放",
     "background": "背景",
@@ -588,6 +592,8 @@
     "show_physical_stores": "显示实体店"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "箭头",
     "auto": "自动",
@@ -870,6 +876,7 @@
     "direction_top_start": "左上方"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "高级",
     "background_image": "背景图片",
     "background_video": "背景视频",
@@ -1093,6 +1100,7 @@
     "disclosures": "披露信息"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "为使用辅助技术的用户描述视频",
     "video_autoplay": "视频将默认静音",
     "video_external": "使用 YouTube 或 Vimeo URL",

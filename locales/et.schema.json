@@ -30,6 +30,7 @@
     "text": "Tekst"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "Nähtav, kui kollektsioonis on rohkem tooteid, kui siin kuvatakse",
     "advanced": "Täpsem",
     "appearance": "Välimus",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>Töötame kiiresti, et lähetada sinu tellimus esimesel võimalusel. Kui tellimus on teele pandud, saad e-kirja lisateabega. Tarneajad sõltuvad sinu asukohast.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Mobiilivaates kasutatakse alati ikoone",
     "applies_on_image_only": "Kehtib ainult piltidele",
     "aspect_ratio_adjusted": "Kohandatud osades paigutustes",
@@ -408,6 +410,8 @@
     "comparison_slider": "Võrdlusliugur"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "Karusselli kohal",
     "accent": "Aktsent",
     "all": "Kõik",
@@ -690,6 +694,10 @@
     "below_media": "Meedia all"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "Akordion",
     "account": "Konto",
     "actions_display_style": "Menüü stiil",

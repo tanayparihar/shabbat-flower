@@ -30,6 +30,7 @@
     "text": "Texto"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "Visible se a colección ten máis produtos dos que se mostran",
     "advanced": "Avanzado",
     "appearance": "Aparencia",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>Traballaremos rapidamente para enviar o teu pedido o antes posible. Unha vez que se envíe o pedido, recibirás un correo electrónico con máis información. Os prazos de entrega varían en función da túa localización.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "As iconas úsanse sempre nos móbiles",
     "applies_on_image_only": "Aplica só a imaxes",
     "aspect_ratio_adjusted": "Axustado nalgúns deseños",
@@ -408,6 +410,8 @@
     "comparison_slider": "Control desprazable de comparación"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "Enriba do carrusel",
     "accent": "Énfase",
     "all": "Todos",
@@ -690,6 +694,10 @@
     "below_media": "Baixo o elemento multimedia"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "Acordeón",
     "account": "Conta",
     "actions_display_style": "Estilo do menú",

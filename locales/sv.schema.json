@@ -171,6 +171,10 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "Justering",
     "autoplay": "Autouppspelning",
     "background": "Bakgrund",
@@ -588,6 +592,8 @@
     "show_physical_stores": "Visa fysiska butiker"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
@@ -870,6 +876,7 @@
     "direction_top_start": "Uppe till vänster"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "Avancerat",
     "background_image": "Bakgrundsbild",
     "background_video": "Bakgrundsvideo",
@@ -1093,6 +1100,7 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "Beskriv videon för användare av hjälpmedelsteknik",
     "video_autoplay": "Videor kommer att vara tystade som standard",
     "video_external": "Använd en URL från YouTube eller Vimeo",

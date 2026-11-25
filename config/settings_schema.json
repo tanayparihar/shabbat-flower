@@ -84,6 +84,11 @@
         "info": "t:info.page_text_color_default_info"
       },
       {
+        "type": "color",
+        "id": "page_heading_color",
+        "label": "t:settings.page_heading_color"
+      },
+      {
         "type": "paragraph",
         "content": "t:content.page_text_color_contrast_info"
       },
@@ -114,6 +119,13 @@
         "id": "type_accent_font",
         "default": "anonymous_pro_n4",
         "label": "t:options.accent"
+      },
+      {
+        "type": "checkbox",
+        "id": "type_heading_spectral",
+        "label": "t:settings.type_heading_spectral",
+        "info": "t:info.type_heading_spectral",
+        "default": false
       },
       {
         "type": "header",
@@ -229,12 +241,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -247,6 +267,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -297,12 +321,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -377,12 +409,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -395,6 +435,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -445,12 +489,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -533,12 +585,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -551,6 +611,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -601,12 +665,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -689,12 +761,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -707,6 +787,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -757,12 +841,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -845,12 +937,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -863,6 +963,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -913,12 +1017,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -1001,12 +1113,20 @@
             "label": "24px"
           },
           {
+            "value": "28",
+            "label": "28px"
+          },
+          {
             "value": "32",
             "label": "32px"
           },
           {
             "value": "40",
             "label": "40px"
+          },
+          {
+            "value": "44",
+            "label": "44px"
           },
           {
             "value": "48",
@@ -1019,6 +1139,10 @@
           {
             "value": "72",
             "label": "72px"
+          },
+          {
+            "value": "74",
+            "label": "74px"
           },
           {
             "value": "88",
@@ -1069,12 +1193,20 @@
             "label": "t:options.tight"
           },
           {
+            "value": "heading-snug",
+            "label": "t:options.snug"
+          },
+          {
             "value": "heading-normal",
             "label": "t:options.normal"
           },
           {
             "value": "heading-loose",
             "label": "t:options.loose"
+          },
+          {
+            "value": "heading-label",
+            "label": "t:options.extra_loose"
           }
         ],
         "default": "heading-normal"
@@ -1438,6 +1570,68 @@
           }
         ],
         "default": "default"
+      },
+      {
+        "type": "header",
+        "content": "t:content.button_sizing"
+      },
+      {
+        "type": "select",
+        "id": "button_text_size",
+        "label": "t:settings.size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:options.default"
+          },
+          {
+            "value": "12",
+            "label": "12px"
+          },
+          {
+            "value": "14",
+            "label": "14px"
+          },
+          {
+            "value": "16",
+            "label": "16px"
+          },
+          {
+            "value": "18",
+            "label": "18px"
+          }
+        ],
+        "default": "default"
+      },
+      {
+        "type": "range",
+        "id": "button_letter_spacing",
+        "label": "t:settings.letter_spacing",
+        "min": 0,
+        "max": 3,
+        "step": 0.1,
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "button_padding_block",
+        "label": "t:settings.button_padding_block",
+        "min": 8,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "button_padding_inline",
+        "label": "t:settings.button_padding_inline",
+        "min": 12,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "default": 24
       },
       {
         "type": "header",

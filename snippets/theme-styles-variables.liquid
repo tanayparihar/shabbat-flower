@@ -216,6 +216,8 @@
     --letter-spacing--heading-tight: -0.03em;
     --letter-spacing--heading-normal: 0em;
     --letter-spacing--heading-loose: 0.03em;
+    --letter-spacing--heading-snug: -0.02em;
+    --letter-spacing--heading-label: 0.11em;
 
     --letter-spacing--body-tight: -0.03em;
     --letter-spacing--body-normal: 0em;
@@ -562,8 +564,12 @@
     /* Button size */
     --button-size-md: 36px;
     --button-size: var(--minimum-touch-target);
-    --button-padding-inline: 24px;
-    --button-padding-block: 16px;
+    --button-padding-inline: {{ settings.button_padding_inline }}px;
+    --button-padding-block: {{ settings.button_padding_block }}px;
+    --button-letter-spacing: {{ settings.button_letter_spacing }}px;
+    {% if settings.button_text_size != 'default' %}
+      --button-font-size: {{ settings.button_text_size | divided_by: 16.0 }}rem;
+    {% endif %}
 
     /* Button font: the accent font brings its own style and weight; body buttons keep the paragraph style and weight */
     {%- liquid

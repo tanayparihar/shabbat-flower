@@ -30,6 +30,7 @@
     "text": "உரை"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "காட்டப்படுவதைவிடத் தொகுப்பில் அதிக தயாரிப்புகள் இருந்தால் புலப்படும்",
     "advanced": "மேம்பட்ட",
     "appearance": "தோற்றம்",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>கூடிய விரைவில் உங்கள் ஆர்டரை ஷிப்பிங் செய்ய நாங்கள் துரிதமாகச் செயல்படுவோம். உங்கள் ஆர்டர் ஷிப்பிங் செய்யப்பட்டவுடன், மேலதிகத் தகவல்களுடன் உங்களுக்கு ஒரு மின்னஞ்சல் வரும். டெலிவரி நேரங்கள் உங்கள் இருப்பிடத்தைப் பொறுத்து மாறுபடும்.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "மொபைலில் ஐகான்கள் எப்போதும் பயன்படுத்தப்படும்",
     "applies_on_image_only": "படங்களுக்கு மட்டுமே பொருந்தும்",
     "aspect_ratio_adjusted": "சில தளவமைப்புகளில் சரிசெய்யப்படும்",
@@ -408,6 +410,8 @@
     "comparison_slider": "ஒப்பீட்டு ஸ்லைடர்"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "கரோசலுக்கு மேலே",
     "accent": "ஆக்சென்ட்",
     "all": "அனைத்தும்",
@@ -690,6 +694,10 @@
     "below_media": "மீடியாவுக்குக் கீழே"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "அக்கார்டியன்",
     "account": "கணக்கு",
     "actions_display_style": "மெனு ஸ்டைல்",

@@ -171,6 +171,10 @@
     "disclosures": "การเปิดเผยข้อมูล"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "การจัดตำแหน่ง",
     "autoplay": "เล่นอัตโนมัติ",
     "background": "พื้นหลัง",
@@ -588,6 +592,8 @@
     "show_physical_stores": "แสดงร้านค้าจริง"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "ลูกศร",
     "auto": "อัตโนมัติ",
@@ -870,6 +876,7 @@
     "direction_top_start": "บนซ้าย"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "ขั้นสูง",
     "background_image": "รูปภาพพื้นหลัง",
     "background_video": "วิดีโอพื้นหลัง",
@@ -1093,6 +1100,7 @@
     "disclosures": "การเปิดเผยข้อมูล"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "โปรดอธิบายวิดีโอสำหรับผู้ใช้เทคโนโลยีความช่วยเหลือพิเศษ",
     "video_autoplay": "วิดีโอจะถูกปิดเสียงตามค่าเริ่มต้น",
     "video_external": "ใช้ URL ของ YouTube หรือ Vimeo",

@@ -171,6 +171,10 @@
     "disclosures": "Toelichtingen"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "autoplay": "Automatisch afspelen",
     "background": "Achtergrond",
     "border_radius": "Hoekradius",
@@ -588,6 +592,8 @@
     "show_physical_stores": "Fysieke winkels tonen"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "Pijl",
     "banana": "Banaan",
@@ -870,6 +876,7 @@
     "input_field": "Invoerveld"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "background_video": "Achtergrondvideo",
     "describe_the_video_for": "Geef een beschrijving van de video voor klanten die schermlezers gebruiken. [Meer informatie](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Breedte wordt automatisch geoptimaliseerd voor mobiel.",
@@ -1093,6 +1100,7 @@
     "disclosures": "Toelichtingen"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "carousel_layout_on_mobile": "Op mobiel wordt altijd een carrousel gebruikt",
     "video_alt_text": "Beschrijf de video voor gebruikers van ondersteunende technologie",
     "video_autoplay": "Video's worden standaard gedempt",

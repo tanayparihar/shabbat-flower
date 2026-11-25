@@ -30,6 +30,7 @@
     "text": "Teksts"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "Redzams, ja kolekcijā ir vairāk produktu, nekā tiek rādīts",
     "advanced": "Papildu",
     "appearance": "Izskats",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>Mēs rīkosimies ātri, lai nosūtītu tavu pasūtījumu pēc iespējas ātrāk. Kad pasūtījums būs nosūtīts, tu saņemsi e-pastu ar plašāku informāciju. Piegādes laiks atšķiras atkarībā no tavas atrašanās vietas.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Mobilajās ierīcēs vienmēr tiek izmantotas ikonas",
     "applies_on_image_only": "Attiecas tikai uz attēliem",
     "aspect_ratio_adjusted": "Pielāgots dažos izkārtojumos",
@@ -408,6 +410,8 @@
     "comparison_slider": "Salīdzināšanas slīdnis"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "Virs karuseļa",
     "accent": "Akcents",
     "all": "Visi",
@@ -690,6 +694,10 @@
     "below_media": "Zem multivides"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "Izplešams saraksts",
     "account": "Konts",
     "actions_display_style": "Izvēlnes stils",

@@ -171,6 +171,10 @@
     "disclosures": "Oplysninger"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "alignment": "Justering",
     "autoplay": "Automatisk afspilning",
     "background": "Baggrund",
@@ -588,6 +592,8 @@
     "show_physical_stores": "Vis fysiske butikker"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "Pil",
     "auto": "Auto",
@@ -870,6 +876,7 @@
     "direction_top_start": "Øverst til venstre"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "advanced": "Avanceret",
     "background_image": "Baggrundsbillede",
     "background_video": "Baggrundsvideo",
@@ -1093,6 +1100,7 @@
     "disclosures": "Oplysninger"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "carousel_layout_on_mobile": "Karrusellen bruges altid på mobil",
     "video_alt_text": "Beskriv videoen for brugere af hjælpeteknologi",
     "video_autoplay": "Videoer vil som standard være uden lyd",

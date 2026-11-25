@@ -30,6 +30,7 @@
     "text": "টেক্সট"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "প্রদর্শিত পরিমাণের চেয়ে কালেকশনে বেশি পণ্য থাকলে দেখা যাবে",
     "advanced": "অ্যাডভান্সড",
     "appearance": "অ্যাপিয়ারেন্স",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>যত তাড়াতাড়ি সম্ভব আপনার অর্ডার শিপ করতে আমরা দ্রুত কাজ করব। আপনার অর্ডার শিপ করা হলে, আপনি আরও বিস্তারিত তথ্য সহ একটি ইমেইল পাবেন। আপনার লোকেশনের ওপর ভিত্তি করে ডেলিভারির সময় ভিন্ন হতে পারে।</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "মোবাইলে সবসময় আইকন ব্যবহৃত হয়",
     "applies_on_image_only": "শুধুমাত্র ছবির ক্ষেত্রে প্রযোজ্য",
     "aspect_ratio_adjusted": "কিছু লেআউটে অ্যাডজাস্ট করা হয়েছে",
@@ -408,6 +410,8 @@
     "comparison_slider": "তুলনামূলক স্লাইডার"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "ক্যারোজেলের ওপরে",
     "accent": "অ্যাকসেন্ট",
     "all": "সব",
@@ -690,6 +694,10 @@
     "below_media": "মিডিয়ার নিচে"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "অ্যাকর্ডিয়ন",
     "account": "অ্যাকাউন্ট",
     "actions_display_style": "মেনুর স্টাইল",

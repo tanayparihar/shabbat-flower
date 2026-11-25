@@ -30,6 +30,7 @@
     "text": "טקסט"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "גלוי אם באוסף יש יותר מוצרים ממה שמוצג",
     "advanced": "מתקדם",
     "appearance": "מראה",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>נעבוד מהר כדי לשלוח את ההזמנה שלך בהקדם האפשרי. לאחר שההזמנה שלך תישלח, תקבל דוא&quot;ל עם מידע נוסף. זמני האספקה משתנים בהתאם למיקומך.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "תמיד נעשה שימוש בסמלים בנייד",
     "applies_on_image_only": "חל על תמונות בלבד",
     "aspect_ratio_adjusted": "מותאם בחלק מהפריסות",
@@ -408,6 +410,8 @@
     "comparison_slider": "מחוון השוואה"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "מעל הקרוסלה",
     "accent": "הדגשה",
     "all": "הכול",
@@ -690,6 +694,10 @@
     "direction_top_start": "למעלה, התחלה"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "אקורדיון",
     "account": "חשבון",
     "actions_display_style": "סגנון תפריט",

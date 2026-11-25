@@ -30,6 +30,7 @@
     "text": "ટેક્સ્ટ"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "visible_if_collection_has_more_products": "જો કલેક્શનમાં બતાવ્યા કરતાં વધુ પ્રોડક્ટ હોય, તો દૃશ્યમાન થાય છે",
     "advanced": "ઍડવાન્સ્ડ",
     "appearance": "દેખાવ",
@@ -215,6 +216,7 @@
     "work_quickly_to_ship": "<p>અમે શક્ય તેટલી વહેલી તકે તમારો ઑર્ડર શિપ કરવા માટે ઝડપથી કામ કરીશું. એકવાર તમારો ઑર્ડર શિપ થઈ જાય, પછી તમને વધુ માહિતી સાથેનો ઇમેઇલ મળશે. ડિલિવરીનો સમય તમારા લોકેશનના આધારે બદલાય છે.</p>"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "આઇકનનો હંમેશાં મોબાઇલ પર ઉપયોગ થાય છે",
     "applies_on_image_only": "માત્ર ઇમેજ પર લાગુ પડે છે",
     "aspect_ratio_adjusted": "કેટલાક લેઆઉટમાં ઍડજસ્ટ કરવામાં આવે છે",
@@ -408,6 +410,8 @@
     "comparison_slider": "સરખામણી સ્લાઇડર"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "above_carousel": "કેરોયુઝલની ઉપર",
     "accent": "એક્સેન્ટ",
     "all": "તમામ",
@@ -690,6 +694,10 @@
     "below_media": "મીડિયાની નીચે"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "accordion": "એકોર્ડિયન",
     "account": "એકાઉન્ટ",
     "actions_display_style": "મેનૂની સ્ટાઇલ",

@@ -171,6 +171,10 @@
     "disclosures": "Informacje prawne"
   },
   "settings": {
+    "button_padding_block": "Vertical padding",
+    "button_padding_inline": "Horizontal padding",
+    "page_heading_color": "Heading color",
+    "type_heading_spectral": "Use Spectral for headings",
     "autoplay": "Autoodtwarzanie",
     "background": "Tło",
     "border_radius": "Promień narożnika",
@@ -588,6 +592,8 @@
     "show_physical_stores": "Pokaż sklepy fizyczne"
   },
   "options": {
+    "snug": "Snug",
+    "extra_loose": "Extra loose",
     "apple": "Apple",
     "arrow": "Strzałka",
     "banana": "Banan",
@@ -870,6 +876,7 @@
     "direction_top_start": "Góra po lewej"
   },
   "content": {
+    "button_sizing": "Size and spacing",
     "background_video": "Wideo w tle",
     "describe_the_video_for": "Opisz film dla klientów korzystających z czytników ekranu. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
     "width_is_automatically_optimized": "Szerokość jest automatycznie optymalizowana pod kątem urządzeń mobilnych.",
@@ -1093,6 +1100,7 @@
     "disclosures": "Informacje prawne"
   },
   "info": {
+    "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "Opisz wideo dla użytkowników technologii wspomagających",
     "video_autoplay": "Domyślnie filmy będą wyciszone",
     "video_external": "Użyj adresu URL z YouTube lub Vimeo",

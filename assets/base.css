@@ -645,7 +645,7 @@ h1,
   line-height: var(--font-h1--line-height);
   letter-spacing: var(--font-h1--letter-spacing);
   text-transform: var(--font-h1--case);
-  color: var(--color);
+  color: var(--color, var(--color-foreground-heading, inherit));
 }
 
 @media screen and (max-width: 1200px) {
@@ -667,7 +667,7 @@ h2,
   line-height: var(--font-h2--line-height);
   letter-spacing: var(--font-h2--letter-spacing);
   text-transform: var(--font-h2--case);
-  color: var(--color);
+  color: var(--color, var(--color-foreground-heading, inherit));
 }
 
 @media screen and (max-width: 1200px) {
@@ -690,7 +690,7 @@ h3,
   line-height: var(--font-h3--line-height);
   letter-spacing: var(--font-h3--letter-spacing);
   text-transform: var(--font-h3--case);
-  color: var(--color);
+  color: var(--color, var(--color-foreground-heading, inherit));
 }
 
 @media screen and (max-width: 1200px) {
@@ -848,6 +848,8 @@ button.shopify-payment-button__button--unbranded {
   font-weight: var(--button-font-weight-primary);
   text-transform: var(--button-text-case-primary);
   border-radius: var(--style-border-radius-buttons-primary);
+  font-size: var(--button-font-size, var(--font-paragraph--size));
+  letter-spacing: var(--button-letter-spacing);
 }
 
 .button:not(.button-secondary, .button-unstyled) {
@@ -860,6 +862,8 @@ button.shopify-payment-button__button--unbranded {
   font-weight: var(--button-font-weight-secondary);
   text-transform: var(--button-text-case-secondary);
   border-radius: var(--style-border-radius-buttons-secondary);
+  font-size: var(--button-font-size, var(--font-paragraph--size));
+  letter-spacing: var(--button-letter-spacing);
 }
 
 button.shopify-payment-button__button--unbranded {
