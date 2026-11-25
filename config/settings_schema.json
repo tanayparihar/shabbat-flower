@@ -188,6 +188,30 @@
         "default": "body-normal"
       },
       {
+        "type": "select",
+        "id": "type_letter_spacing_paragraph",
+        "label": "t:settings.letter_spacing",
+        "options": [
+          {
+            "value": "body-tight",
+            "label": "t:options.tight"
+          },
+          {
+            "value": "body-normal",
+            "label": "t:options.normal"
+          },
+          {
+            "value": "body-relaxed",
+            "label": "t:options.slightly_loose"
+          },
+          {
+            "value": "body-loose",
+            "label": "t:options.loose"
+          }
+        ],
+        "default": "body-normal"
+      },
+      {
         "type": "header",
         "content": "t:options.h1"
       },

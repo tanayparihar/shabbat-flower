@@ -136,7 +136,8 @@
     "page_margin_desktop": 72,
     "page_margin_tablet": 40,
     "page_margin_mobile": 20,
-    "quick_add": false
+    "quick_add": false,
+    "type_letter_spacing_paragraph": "body-relaxed"
   },
   "presets": {
     "Horizon": {

@@ -250,6 +250,7 @@
     "show_physical_stores_help": "הצג גם מיקומים המסומנים כחזית חנות פיזית שהמוצר זמין בהם במלאי, גם כאשר הם לא מציעים איסוף."
   },
   "names": {
+    "feature_cards": "Feature cards",
     "product_type": "Product type",
     "option_pills": "Option pills",
     "how_it_works": "How it works",
@@ -416,6 +417,7 @@
     "comparison_slider": "מחוון השוואה"
   },
   "options": {
+    "slightly_loose": "Slightly loose",
     "equal_columns": "Equal columns",
     "narrow_second_column": "Narrow second column",
     "snug": "Snug",

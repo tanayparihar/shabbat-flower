@@ -224,6 +224,7 @@
 
     --letter-spacing--body-tight: -0.03em;
     --letter-spacing--body-normal: 0em;
+    --letter-spacing--body-relaxed: 0.02em;
     --letter-spacing--body-loose: 0.03em;
 
     /* Line height / Leading */
@@ -332,6 +333,8 @@
           assign preset_case = '--font-body--case'
 
           echo '--font-[preset_name]--weight: [preset_weight];' | replace: '[preset_name]', preset_name | replace: '[preset_weight]', preset_weight
+          assign body_letter_spacing = settings.type_letter_spacing_paragraph | default: 'body-normal'
+          echo '--font-[preset_name]--letter-spacing: var(--letter-spacing--[body_letter_spacing]);' | replace: '[preset_name]', preset_name | replace: '[body_letter_spacing]', body_letter_spacing
         else
           assign preset_font_id = 'type_font_[preset_name]' | replace: '[preset_name]', preset_name
           assign preset_font = '--font-[preset_font]--family' | replace: '[preset_font]', settings[preset_font_id]

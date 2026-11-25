@@ -627,6 +627,13 @@ body,
   color: var(--color, var(--color-foreground));
 }
 
+/* Not on body: menus, labels and small text would inherit it */
+.paragraph:not(.button),
+.paragraph > *,
+.text-block.paragraph :is(h1, h2, h3, h4, h5, h6) {
+  letter-spacing: var(--font-paragraph--letter-spacing);
+}
+
 /* Ensure inputs with type presets maintain minimum 16px on mobile to prevent iOS zoom */
 @media screen and (max-width: 1200px) {
   input.paragraph.paragraph,
