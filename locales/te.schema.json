@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>వీలైనంత త్వరగా మీ ఆర్డర్‌ను షిప్ చేయడానికి మేము వేగంగా పని చేస్తాము. మీ ఆర్డర్ షిప్ చేయబడిన తర్వాత, మీరు తదుపరి సమాచారంతో కూడిన ఇమెయిల్‌ను అందుకుంటారు. మీ లొకేషన్‌ను బట్టి డెలివరీ సమయాలు మారుతూ ఉంటాయి.</p>"
   },
   "info": {
+    "screen_height": "Desktop and tablet only. 0 keeps the image shape.",
     "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "మొబైల్‌లో ఎల్లప్పుడూ ఐకాన్‌లు ఉపయోగించబడతాయి",
@@ -249,6 +250,7 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
     "column": "నిలువు వరుస",
@@ -699,6 +701,14 @@
     "below_media": "మీడియా దిగువన"
   },
   "settings": {
+    "screen_height": "Height as part of the screen",
+    "accessible_label": "Label for screen readers",
+    "default_note": "Note before a choice is made",
+    "option_1": "Option 1",
+    "option_2": "Option 2",
+    "option_3": "Option 3",
+    "option_4": "Option 4",
+    "italic": "Italic",
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",

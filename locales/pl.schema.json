@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
     "404": "404",
@@ -173,6 +174,14 @@
     "disclosures": "Informacje prawne"
   },
   "settings": {
+    "screen_height": "Height as part of the screen",
+    "accessible_label": "Label for screen readers",
+    "default_note": "Note before a choice is made",
+    "option_1": "Option 1",
+    "option_2": "Option 2",
+    "option_3": "Option 3",
+    "option_4": "Option 4",
+    "italic": "Italic",
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",
@@ -1117,6 +1126,7 @@
     "disclosures": "Informacje prawne"
   },
   "info": {
+    "screen_height": "Desktop and tablet only. 0 keeps the image shape.",
     "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "Opisz wideo dla użytkowników technologii wspomagających",

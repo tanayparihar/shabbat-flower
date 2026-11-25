@@ -50,6 +50,9 @@
     if block_settings.max_lines != blank and block_settings.max_lines != '0'
       echo ' text-block--clamp '
     endif
+    if block_settings.italic
+      echo ' text-block--italic '
+    endif
     if is_rte
       echo ' rte '
     endif

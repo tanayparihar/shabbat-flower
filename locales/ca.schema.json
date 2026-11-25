@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Treballarem ràpidament per enviar la comanda al més aviat possible. Quan s'hagi enviat la comanda, rebràs un correu electrònic amb més informació. Els terminis de lliurament varien en funció de la teva ubicació.</p>"
   },
   "info": {
+    "screen_height": "Desktop and tablet only. 0 keeps the image shape.",
     "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Les icones s'utilitzen sempre a la versió per a mòbils",
@@ -249,6 +250,7 @@
     "show_physical_stores_help": "Mostra també les ubicacions marcades com a aparador físic que tenen el producte en estoc, encara que no ofereixin recollida."
   },
   "names": {
+    "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
     "column": "Columna",
@@ -699,6 +701,14 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "screen_height": "Height as part of the screen",
+    "accessible_label": "Label for screen readers",
+    "default_note": "Note before a choice is made",
+    "option_1": "Option 1",
+    "option_2": "Option 2",
+    "option_3": "Option 3",
+    "option_4": "Option 4",
+    "italic": "Italic",
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",

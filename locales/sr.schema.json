@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Radićemo brzo da bismo poslali vašu porudžbinu što je pre moguće. Kada porudžbina bude poslata, dobićete imejl sa daljim informacijama. Vreme isporuke se razlikuje u zavisnosti od vaše lokacije.</p>"
   },
   "info": {
+    "screen_height": "Desktop and tablet only. 0 keeps the image shape.",
     "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Ikonice se uvek koriste na mobilnom uređaju",
@@ -249,6 +250,7 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
     "column": "Kolona",
@@ -699,6 +701,14 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "screen_height": "Height as part of the screen",
+    "accessible_label": "Label for screen readers",
+    "default_note": "Note before a choice is made",
+    "option_1": "Option 1",
+    "option_2": "Option 2",
+    "option_3": "Option 3",
+    "option_4": "Option 4",
+    "italic": "Italic",
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",

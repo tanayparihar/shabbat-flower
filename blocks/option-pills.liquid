@@ -1,0 +1,207 @@
+{% doc %}
+  Renders a row of selectable pills with a short note that changes with the selection,
+  for example gift durations. It is informational and does not change the cart.
+  Works without JavaScript.
+
+  @example
+  {% content_for 'block', type: 'option-pills', id: 'durations' %}
+{% enddoc %}
+
+{% liquid
+  assign block_settings = block.settings
+  assign numbers = '1,2,3,4' | split: ','
+%}
+
+<fieldset
+  class="option-pills"
+  {{ block.shopify_attributes }}
+>
+  {% if block_settings.legend != blank %}
+    <legend class="visually-hidden">{{ block_settings.legend | escape }}</legend>
+  {% endif %}
+
+  <div class="option-pills__list">
+    {% for number in numbers %}
+      {% liquid
+        assign label_key = 'label_' | append: number
+        assign label = block_settings[label_key]
+      %}
+      {% if label != blank %}
+        <label class="option-pills__pill">
+          <input
+            class="option-pills__input"
+            type="radio"
+            name="option-pills-{{ block.id }}"
+            value="{{ label | escape }}"
+            data-option="{{ number }}"
+          >
+          <span>{{ label | escape }}</span>
+        </label>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div
+    class="option-pills__notes"
+    aria-live="polite"
+  >
+    {% if block_settings.default_note != blank %}
+      <p class="option-pills__note option-pills__note--default">{{ block_settings.default_note | escape }}</p>
+    {% endif %}
+    {% for number in numbers %}
+      {% liquid
+        assign note_key = 'note_' | append: number
+        assign note = block_settings[note_key]
+      %}
+      {% if note != blank %}
+        <p
+          class="option-pills__note"
+          data-note="{{ number }}"
+        >
+          {{- note | escape -}}
+        </p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</fieldset>
+
+{% stylesheet %}
+  .option-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .option-pills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem 1.5rem;
+  }
+
+  .option-pills__pill {
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Hidden even while focused: the pill itself shows selection and focus */
+  .option-pills__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .option-pills__pill span {
+    display: flex;
+    align-items: center;
+    min-height: var(--minimum-touch-target);
+    padding-inline: 1.125rem;
+    border: 2px solid rgb(var(--color-brand-berry-rgb) / var(--opacity-50));
+    border-radius: var(--brand-radius-pill);
+    background-color: var(--color-brand-paper);
+    color: var(--color-foreground);
+  }
+
+  .option-pills__pill input:checked + span {
+    border-color: var(--color-brand-raspberry);
+    background-color: var(--color-brand-raspberry);
+    color: var(--color-brand-white);
+  }
+
+  .option-pills__pill input:focus-visible + span {
+    outline: 2px solid var(--color-brand-raspberry);
+    outline-offset: 2px;
+  }
+
+  .option-pills__note {
+    display: none;
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.35;
+    color: var(--color-foreground);
+  }
+
+  .option-pills__note--default,
+  .option-pills:has([data-option='1']:checked) [data-note='1'],
+  .option-pills:has([data-option='2']:checked) [data-note='2'],
+  .option-pills:has([data-option='3']:checked) [data-note='3'],
+  .option-pills:has([data-option='4']:checked) [data-note='4'] {
+    display: block;
+  }
+
+  .option-pills:has(input:checked) .option-pills__note--default {
+    display: none;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.option_pills",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "legend",
+      "label": "t:settings.accessible_label"
+    },
+    {
+      "type": "text",
+      "id": "default_note",
+      "label": "t:settings.default_note"
+    },
+    {
+      "type": "text",
+      "id": "label_1",
+      "label": "t:settings.option_1"
+    },
+    {
+      "type": "text",
+      "id": "note_1",
+      "label": "t:settings.note"
+    },
+    {
+      "type": "text",
+      "id": "label_2",
+      "label": "t:settings.option_2"
+    },
+    {
+      "type": "text",
+      "id": "note_2",
+      "label": "t:settings.note"
+    },
+    {
+      "type": "text",
+      "id": "label_3",
+      "label": "t:settings.option_3"
+    },
+    {
+      "type": "text",
+      "id": "note_3",
+      "label": "t:settings.note"
+    },
+    {
+      "type": "text",
+      "id": "label_4",
+      "label": "t:settings.option_4"
+    },
+    {
+      "type": "text",
+      "id": "note_4",
+      "label": "t:settings.note"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.option_pills",
+      "category": "t:categories.basic"
+    }
+  ]
+}
+{% endschema %}

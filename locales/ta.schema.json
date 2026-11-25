@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>கூடிய விரைவில் உங்கள் ஆர்டரை ஷிப்பிங் செய்ய நாங்கள் துரிதமாகச் செயல்படுவோம். உங்கள் ஆர்டர் ஷிப்பிங் செய்யப்பட்டவுடன், மேலதிகத் தகவல்களுடன் உங்களுக்கு ஒரு மின்னஞ்சல் வரும். டெலிவரி நேரங்கள் உங்கள் இருப்பிடத்தைப் பொறுத்து மாறுபடும்.</p>"
   },
   "info": {
+    "screen_height": "Desktop and tablet only. 0 keeps the image shape.",
     "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "மொபைலில் ஐகான்கள் எப்போதும் பயன்படுத்தப்படும்",
@@ -249,6 +250,7 @@
     "show_physical_stores_help": "நேரில் பெறுதல் வசதியை வழங்காவிட்டாலும், தயாரிப்பு சரக்கு இருப்பில் உள்ள, நேரடி ஸ்டோர்ஃபிரண்ட் எனக் குறிக்கப்பட்டுள்ள இடங்களையும் பட்டியலிடவும்."
   },
   "names": {
+    "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
     "column": "நெடுவரிசை",
@@ -699,6 +701,14 @@
     "below_media": "மீடியாவுக்குக் கீழே"
   },
   "settings": {
+    "screen_height": "Height as part of the screen",
+    "accessible_label": "Label for screen readers",
+    "default_note": "Note before a choice is made",
+    "option_1": "Option 1",
+    "option_2": "Option 2",
+    "option_3": "Option 3",
+    "option_4": "Option 4",
+    "italic": "Italic",
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",

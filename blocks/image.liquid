@@ -11,6 +11,8 @@
       assign ratio = '4 / 5'
     when 'four-three'
       assign ratio = '4 / 3'
+    when 'seven-eight'
+      assign ratio = '7 / 8'
     when 'adapt'
       assign ratio = block_settings.image.aspect_ratio
   endcase
@@ -21,11 +23,12 @@
 %}
 
 {% capture class %}
-  image-block image-block--{{ block.id }} image-block--height-{{ block_settings.height }} spacing-style size-style
+  image-block image-block--{{ block.id }} image-block--height-{{ block_settings.height }}{% if block_settings.screen_height > 0 %} image-block--screen-height{% endif %} spacing-style size-style
 {% endcapture %}
 
 {% capture style %}
   --ratio: {{ ratio }};
+  --image-screen-height: {{ block_settings.screen_height }}svh;
   {% render 'size-style', settings: block_settings %}
   {% render 'spacing-style', settings: block_settings %}
 {% endcapture %}
@@ -116,6 +119,15 @@
     object-fit: cover;
     aspect-ratio: var(--ratio);
   }
+
+  /* Larger screens: size the image from the screen height instead of its shape */
+  @media screen and (min-width: 750px) {
+    .image-block--screen-height .image-block__image {
+      width: 100%;
+      height: var(--image-screen-height);
+      aspect-ratio: auto;
+    }
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -161,9 +173,24 @@
         {
           "value": "four-three",
           "label": "4:3"
+        },
+        {
+          "value": "seven-eight",
+          "label": "7:8"
         }
       ],
       "default": "adapt"
+    },
+    {
+      "type": "range",
+      "id": "screen_height",
+      "label": "t:settings.screen_height",
+      "info": "t:info.screen_height",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
     },
     {
       "type": "select",

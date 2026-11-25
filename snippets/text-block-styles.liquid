@@ -16,6 +16,16 @@
 {%- enddoc -%}
 
 {% stylesheet %}
+  .text-block--italic > * {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 749px) {
+    .text-block--italic.custom-font-size > * {
+      font-size: min(var(--font-size), 7.2vw);
+    }
+  }
+
   @media screen and (min-width: 750px) {
     .text-block--clamp > * {
       display: -webkit-box;

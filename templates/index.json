@@ -811,11 +811,226 @@
         "padding_start": 100,
         "padding_end": 100
       }
+    },
+    "weekly_message": {
+      "type": "section",
+      "name": "Weekly message",
+      "blocks": {
+        "weekly_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every week, a different arrangement. Always the same eye, the same care, the same style.</p>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "2.375rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0",
+            "italic": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "weekly_text"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "gift_subscription": {
+      "type": "section",
+      "name": "Gift subscription",
+      "blocks": {
+        "gift_image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/subscription_gift_image.jpg",
+            "image_ratio": "seven-eight",
+            "width": "custom",
+            "custom_width": 60,
+            "width_mobile": "fill",
+            "height": "fit",
+            "border": "none",
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "screen_height": 75
+          },
+          "blocks": {}
+        },
+        "gift_content": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 30,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "open_in_new_tab": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "gift_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>The gift that<br/>arrives every Friday</h2>",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "max_lines": "0"
+              },
+              "blocks": {}
+            },
+            "gift_text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>A flower subscription for someone who deserves a beautiful table every week. You choose the collection and duration. Joanne writes a personal note on a card included with the first delivery.</p>",
+                "text_color": "",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "max_lines": "0"
+              },
+              "blocks": {}
+            },
+            "gift_durations": {
+              "type": "option-pills",
+              "settings": {
+                "legend": "Subscription length",
+                "default_note": "Billed per delivery, monthly.",
+                "label_1": "4 weeks",
+                "note_1": "Ends automatically after 4 deliveries. No further charges.",
+                "label_2": "8 weeks",
+                "note_2": "Ends automatically after 8 deliveries. No further charges.",
+                "label_3": "12 weeks",
+                "note_3": "Ends automatically after 12 deliveries. No further charges.",
+                "label_4": "Ongoing",
+                "note_4": "Continues until cancelled, minimum 4 deliveries."
+              },
+              "blocks": {}
+            },
+            "gift_button": {
+              "type": "button",
+              "settings": {
+                "label": "Gift a subscription",
+                "link": "shopify://pages/gift-subscription",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "width_mobile": "fit-content"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "gift_heading",
+            "gift_text",
+            "gift_durations",
+            "gift_button"
+          ]
+        }
+      },
+      "block_order": [
+        "gift_image",
+        "gift_content"
+      ],
+      "settings": {
+        "content_direction": "row",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 80,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100,
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center"
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "collections",
-    "how_it_works"
+    "how_it_works",
+    "weekly_message",
+    "gift_subscription"
   ]
 }
