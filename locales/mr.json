@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "account": "खाते",
     "active_filters": "सक्रिय फिल्टर्स:",
     "cart": "कार्ट",

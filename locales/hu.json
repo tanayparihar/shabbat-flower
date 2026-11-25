@@ -29,6 +29,7 @@
     "slider_label": "Csúszka"
   },
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "play_model": "3D-modell lejátszása",
     "play_video": "Videó lejátszása",
     "unit_price": "Egységár",

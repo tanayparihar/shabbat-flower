@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "account": "Conta",
     "active_filters": "Filtros activos:",
     "cart": "Carro",

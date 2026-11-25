@@ -250,6 +250,10 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "photo_strip": "Photo strip",
+    "photo": "Photo",
+    "reviews": "Reviews",
+    "review": "Review",
     "feature_cards": "Feature cards",
     "product_type": "Product type",
     "option_pills": "Option pills",
@@ -704,6 +708,10 @@
     "below_media": "మీడియా దిగువన"
   },
   "settings": {
+    "author": "Author",
+    "stars": "Stars",
+    "rating_label": "Rating line",
+    "star_color": "Star color",
     "carousel_contained": "Keep carousel within the page width",
     "reserve_two_lines": "Always leave room for two lines",
     "screen_height": "Height as part of the screen",

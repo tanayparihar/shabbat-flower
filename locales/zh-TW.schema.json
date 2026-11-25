@@ -9,6 +9,10 @@
  */
 {
   "names": {
+    "photo_strip": "Photo strip",
+    "photo": "Photo",
+    "reviews": "Reviews",
+    "review": "Review",
     "feature_cards": "Feature cards",
     "product_type": "Product type",
     "option_pills": "Option pills",
@@ -176,6 +180,10 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "author": "Author",
+    "stars": "Stars",
+    "rating_label": "Rating line",
+    "star_color": "Star color",
     "carousel_contained": "Keep carousel within the page width",
     "reserve_two_lines": "Always leave room for two lines",
     "screen_height": "Height as part of the screen",

@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "account": "అకౌంట్",
     "active_filters": "యాక్టివ్ ఫిల్టర్‌లు:",
     "cart": "కార్ట్",

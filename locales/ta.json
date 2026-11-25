@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "account": "கணக்கு",
     "active_filters": "செயலில் உள்ள வடிப்பான்கள்:",
     "cart": "கார்ட்",

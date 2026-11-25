@@ -9,6 +9,7 @@
  */
 {
   "accessibility": {
+    "star_rating": "{{ rating }} out of 5 stars",
     "account": "Konts",
     "active_filters": "Aktīvie filtri:",
     "cart": "Grozs",

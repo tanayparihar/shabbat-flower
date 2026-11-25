@@ -1542,6 +1542,235 @@
         "padding_start": 100,
         "padding_end": 100
       }
+    },
+    "reviews": {
+      "type": "reviews",
+      "name": "What they say",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "quote": "“Every week the flowers were gorgeous and would last much longer than store bought.”",
+            "author": "Gabriela Berkstein",
+            "stars": 5
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "quote": "“I have a subscription going to my grandmother and that makes her super happy every week.”",
+            "author": "Emilio Smeke",
+            "stars": 5
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "quote": "“The flowers were absolutely gorgeous, vibrant, fresh and arranged beautifully.”",
+            "author": "Michelle Yasharpour",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "settings": {
+        "heading": "After the flowers arrive",
+        "rating_label": "Rated 5.0 on Google Reviews",
+        "background_color": "{{ settings.color_palette.background }}",
+        "star_color": "#f4b400",
+        "padding_start": 0,
+        "padding_end": 100
+      }
+    },
+    "studio_photos": {
+      "type": "photo-strip",
+      "name": "Studio photos",
+      "blocks": {
+        "photo_1": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Alma_abundant_Centerpiece_1.jpg"
+          }
+        },
+        "photo_2": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Lavan_statement_centerpiece_main.jpg"
+          }
+        },
+        "photo_3": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Presente_abundant_wrapped_1.jpg"
+          }
+        },
+        "photo_4": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Simcha_statement_Centerpiece_2.jpg"
+          }
+        },
+        "photo_5": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Lev_pink.jpg"
+          }
+        },
+        "photo_6": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Lavan_abundant_wrapped_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "photo_1",
+        "photo_2",
+        "photo_3",
+        "photo_4",
+        "photo_5",
+        "photo_6"
+      ],
+      "settings": {
+        "heading": "Made by hand, sent with love",
+        "text": "Every arrangement starts at the market and ends on someone’s table. A few of our favourites, past and present.",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
+    },
+    "closing_cta": {
+      "type": "section",
+      "name": "Closing call to action",
+      "blocks": {
+        "cta_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Bring the Friday feeling home</h2>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0"
+          },
+          "blocks": {}
+        },
+        "cta_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Order a single arrangement, made by hand, for the moment that matters.</p>",
+            "text_color": "",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0"
+          },
+          "blocks": {}
+        },
+        "cta_actions": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "open_in_new_tab": false,
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "cta_button": {
+              "type": "button",
+              "settings": {
+                "label": "Subscribe",
+                "link": "shopify://pages/subscribe",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "width_mobile": "fit-content"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "cta_button"
+          ]
+        }
+      },
+      "block_order": [
+        "cta_heading",
+        "cta_text",
+        "cta_actions"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 10,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 80,
+        "padding-block-end": 80,
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center"
+      }
     }
   },
   "order": [
@@ -1552,6 +1781,9 @@
     "gift_subscription",
     "order_once",
     "joanne_story",
-    "workshops"
+    "workshops",
+    "reviews",
+    "studio_photos",
+    "closing_cta"
   ]
 }

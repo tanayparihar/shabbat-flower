@@ -1,0 +1,321 @@
+{% comment %}
+  Section contract.
+  Shows a heading, a short text and two arrow buttons beside a sideways-scrolling
+  row of photos, every second photo set lower. Photos are section blocks, shown in
+  the order the merchant arranges them. On narrow screens the text sits above the
+  photos. Reusable on any page.
+
+  @example
+  <!-- Add "Photo strip" in the theme editor, then add one Photo block per image -->
+{% endcomment %}
+
+<script
+  src="{{ 'photo-strip.js' | asset_url }}"
+  type="module"
+></script>
+
+{% liquid
+  assign section_settings = section.settings
+  assign custom_class = ''
+  if section_settings.background_color != blank
+    assign custom_class = 'color-custom-' | append: section.id
+    render 'contrast-override', background_color: section_settings.background_color, section_id: section.id
+  endif
+%}
+
+<div class="section-background {{ custom_class }}"></div>
+<div
+  class="section section--page-width photo-strip {{ custom_class }}"
+  style="
+    --strip-padding-start: {{ section_settings.padding_start }}px;
+    --strip-padding-end: {{ section_settings.padding_end }}px;
+  "
+>
+  <photo-strip class="photo-strip__content">
+    <div class="photo-strip__text">
+      {% if section_settings.heading != blank %}
+        <h2 class="photo-strip__heading">{{ section_settings.heading | escape }}</h2>
+      {% endif %}
+      {% if section_settings.text != blank %}
+        <p class="photo-strip__body">{{ section_settings.text | escape | newline_to_br }}</p>
+      {% endif %}
+      {% if section.blocks.size > 1 %}
+        <div class="photo-strip__controls">
+          <button
+            type="button"
+            class="photo-strip__button button-unstyled"
+            ref="previous"
+            on:click="/scrollPrevious"
+            aria-label="{{ 'accessibility.slideshow_previous' | t }}"
+            disabled
+          >
+            <span class="photo-strip__icon photo-strip__icon--previous">
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            </span>
+          </button>
+          <button
+            type="button"
+            class="photo-strip__button photo-strip__button--next button-unstyled"
+            ref="next"
+            on:click="/scrollNext"
+            aria-label="{{ 'accessibility.slideshow_next' | t }}"
+          >
+            <span class="photo-strip__icon">
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        </div>
+      {% endif %}
+    </div>
+
+    <ul
+      class="photo-strip__track list-unstyled"
+      role="list"
+      ref="track"
+      tabindex="0"
+    >
+      {% for block in section.blocks %}
+        <li
+          class="photo-strip__photo"
+          {{ block.shopify_attributes }}
+        >
+          {% if block.settings.image != blank %}
+            {{
+              block.settings.image
+              | image_url: width: 1120
+              | image_tag: widths: '280, 420, 560, 840, 1120', sizes: '(min-width: 750px) 280px, 70vw', loading: 'lazy'
+            }}
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'photo-strip__placeholder' }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </photo-strip>
+</div>
+
+{% stylesheet %}
+  .photo-strip__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 0;
+    padding-block: min(var(--strip-padding-start), 4rem) min(var(--strip-padding-end), 4rem);
+  }
+
+  .photo-strip__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .photo-strip__text > * {
+    margin: 0;
+  }
+
+  .photo-strip__heading {
+    font-weight: 400;
+    color: var(--color-brand-forest);
+    text-wrap: balance;
+  }
+
+  .photo-strip__body {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    color: var(--color-foreground);
+  }
+
+  .photo-strip__text .photo-strip__controls {
+    display: flex;
+    gap: 0.75rem;
+    margin-block-start: 0.5rem;
+  }
+
+  .photo-strip__button {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--color-brand-forest);
+    border-radius: 50%;
+    color: var(--color-brand-forest);
+    cursor: pointer;
+    transition:
+      opacity var(--animation-speed) var(--animation-easing),
+      transform var(--animation-speed) var(--animation-easing);
+  }
+
+  .photo-strip__button--next {
+    background-color: var(--color-brand-forest);
+    color: var(--color-brand-white);
+  }
+
+  .photo-strip__button:hover:not(:disabled) {
+    transform: scale(1.06);
+  }
+
+  .photo-strip__button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .photo-strip__icon {
+    display: flex;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .photo-strip__icon--previous {
+    transform: scaleX(-1);
+  }
+
+  [dir='rtl'] .photo-strip__icon {
+    transform: scaleX(-1);
+  }
+
+  [dir='rtl'] .photo-strip__icon--previous {
+    transform: none;
+  }
+
+  .photo-strip__track {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    min-width: 0;
+    margin: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .photo-strip__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .photo-strip__photo {
+    flex: 0 0 min(17.5rem, 70%);
+    overflow: hidden;
+    border-radius: var(--brand-radius-md);
+    scroll-snap-align: start;
+  }
+
+  .photo-strip__photo:nth-child(even) {
+    margin-block-start: 3.125rem;
+  }
+
+  .photo-strip__photo > img,
+  .photo-strip__placeholder {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 23.75rem;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 750px) {
+    .photo-strip__content {
+      padding-block: var(--strip-padding-start) var(--strip-padding-end);
+    }
+
+    .photo-strip__photo {
+      flex-basis: 17.5rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .photo-strip__content {
+      flex-direction: row;
+      align-items: center;
+      gap: 3.5rem;
+    }
+
+    .photo-strip__text {
+      flex: 0 0 21.25rem;
+    }
+
+    .photo-strip__track {
+      flex: 1;
+      min-height: 26.875rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .photo-strip__track {
+      scroll-behavior: smooth;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.photo_strip",
+  "class": "section-wrapper",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 20,
+  "blocks": [
+    {
+      "type": "photo",
+      "name": "t:names.photo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:settings.image"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:settings.heading"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:settings.text"
+    },
+    {
+      "type": "header",
+      "content": "t:content.appearance"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "default": "{{ settings.color_palette.color4 }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.photo_strip",
+      "category": "t:categories.text",
+      "blocks": [{ "type": "photo" }, { "type": "photo" }, { "type": "photo" }, { "type": "photo" }]
+    }
+  ]
+}
+{% endschema %}
