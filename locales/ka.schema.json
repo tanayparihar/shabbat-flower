@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>ჩვენ სწრაფად ვიმუშავებთ, რათა შენი შეკვეთა რაც შეიძლება მალე გამოიგზავნოს. შეკვეთის გაგზავნის შემდეგ მიიღებ ელფოსტას დამატებითი ინფორმაციით. მიწოდების დრო შენს ლოკაციაზეა დამოკიდებული.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "ხატულები ყოველთვის გამოიყენება მობილურზე",
     "applies_on_image_only": "ვრცელდება მხოლოდ სურათებზე",
@@ -694,6 +695,8 @@
     "below_media": "მედიის ქვემოთ"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Radićemo brzo da bismo poslali vašu porudžbinu što je pre moguće. Kada porudžbina bude poslata, dobićete imejl sa daljim informacijama. Vreme isporuke se razlikuje u zavisnosti od vaše lokacije.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Ikonice se uvek koriste na mobilnom uređaju",
     "applies_on_image_only": "Primenjuje se samo na slike",
@@ -694,6 +695,8 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

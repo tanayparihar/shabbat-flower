@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Treballarem ràpidament per enviar la comanda al més aviat possible. Quan s'hagi enviat la comanda, rebràs un correu electrònic amb més informació. Els terminis de lliurament varien en funció de la teva ubicació.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Les icones s'utilitzen sempre a la versió per a mòbils",
     "applies_on_image_only": "Només s'aplica a les imatges",
@@ -694,6 +695,8 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

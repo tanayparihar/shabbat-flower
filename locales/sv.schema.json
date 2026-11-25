@@ -171,6 +171,8 @@
     "disclosures": "Upplysningar"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",
@@ -1100,6 +1102,7 @@
     "disclosures": "Upplysningar"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "video_alt_text": "Beskriv videon för användare av hjälpmedelsteknik",
     "video_autoplay": "Videor kommer att vara tystade som standard",

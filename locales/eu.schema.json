@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Azkar egingo dugu lan zure eskaera ahalik eta lasterren bidaltzeko. Eskaera bidalitakoan, mezu elektroniko bat jasoko duzu informazio gehiagorekin. Entregatzeko denborak zure kokapenaren araberakoak dira.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Gailu mugikorretan beti erabiltzen dira ikonoak",
     "applies_on_image_only": "Irudietan soilik aplikatzen da",
@@ -694,6 +695,8 @@
     "below_media": "Multimedia-edukiaren azpian"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

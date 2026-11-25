@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Ми будемо працювати швидко, щоб відправити ваше замовлення якомога швидше. Після відправлення замовлення ви отримаєте електронний лист із подальшою інформацією. Час доставки залежить від вашого місцезнаходження.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Значки завжди використовуються на мобільних пристроях",
     "applies_on_image_only": "Застосовується лише до зображень",
@@ -694,6 +695,8 @@
     "below_media": "Під мультимедіа"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

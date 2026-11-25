@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>যত তাড়াতাড়ি সম্ভব আপনার অর্ডার শিপ করতে আমরা দ্রুত কাজ করব। আপনার অর্ডার শিপ করা হলে, আপনি আরও বিস্তারিত তথ্য সহ একটি ইমেইল পাবেন। আপনার লোকেশনের ওপর ভিত্তি করে ডেলিভারির সময় ভিন্ন হতে পারে।</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "মোবাইলে সবসময় আইকন ব্যবহৃত হয়",
     "applies_on_image_only": "শুধুমাত্র ছবির ক্ষেত্রে প্রযোজ্য",
@@ -694,6 +695,8 @@
     "below_media": "মিডিয়ার নিচে"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

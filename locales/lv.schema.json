@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>Mēs rīkosimies ātri, lai nosūtītu tavu pasūtījumu pēc iespējas ātrāk. Kad pasūtījums būs nosūtīts, tu saņemsi e-pastu ar plašāku informāciju. Piegādes laiks atšķiras atkarībā no tavas atrašanās vietas.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "Mobilajās ierīcēs vienmēr tiek izmantotas ikonas",
     "applies_on_image_only": "Attiecas tikai uz attēliem",
@@ -694,6 +695,8 @@
     "below_media": "Zem multivides"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

@@ -216,6 +216,7 @@
     "work_quickly_to_ship": "<p>અમે શક્ય તેટલી વહેલી તકે તમારો ઑર્ડર શિપ કરવા માટે ઝડપથી કામ કરીશું. એકવાર તમારો ઑર્ડર શિપ થઈ જાય, પછી તમને વધુ માહિતી સાથેનો ઇમેઇલ મળશે. ડિલિવરીનો સમય તમારા લોકેશનના આધારે બદલાય છે.</p>"
   },
   "info": {
+    "marquee_duration": "Higher values scroll more slowly",
     "type_heading_spectral": "Replaces the heading font with Spectral, which is hosted in the theme",
     "actions_display_style": "આઇકનનો હંમેશાં મોબાઇલ પર ઉપયોગ થાય છે",
     "applies_on_image_only": "માત્ર ઇમેજ પર લાગુ પડે છે",
@@ -694,6 +695,8 @@
     "below_media": "મીડિયાની નીચે"
   },
   "settings": {
+    "marquee": "Scroll text from right to left",
+    "marquee_duration": "Scroll duration",
     "button_padding_block": "Vertical padding",
     "button_padding_inline": "Horizontal padding",
     "page_heading_color": "Heading color",

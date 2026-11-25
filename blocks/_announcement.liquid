@@ -6,15 +6,25 @@
 {%- assign plain_text = block_settings.text | strip_newlines | strip_html | strip -%}
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
 
+{%- liquid
+  assign is_marquee = section.settings.marquee
+  assign slide_tag = 'slideshow-slide'
+  if is_marquee
+    assign slide_tag = 'div'
+  endif
+-%}
+
 {%- unless plain_text == '' -%}
-  <slideshow-slide
-    ref="slides[]"
+  <{{ slide_tag }}
+    {% unless is_marquee %}
+      ref="slides[]"
+    {% endunless %}
     class="
       announcement-bar__slide
       text-block
       text-block--{{ block.id }}
       text-block--align-center
-      text-block--full-width
+      {% unless is_marquee %}text-block--full-width{% endunless %}
       custom-typography
       {% if block_settings.font_size != "" %}custom-font-size{% endif %}
       {% if block_settings.weight != "" %}custom-font-weight{% endif %}
@@ -22,12 +32,14 @@
     style="
       {% render 'typography-style', settings: block_settings, preset: 'custom' %}
       {% if block_settings.text_color != blank %}--color: {{ block_settings.text_color }}; --color-rgb: {{ block_settings.text_color.rgb }};{% endif %}
-      --width: 100%;
+      --width: {% if is_marquee %}auto{% else %}100%{% endif %};
       --text-align: center;
       --line-height: 1;
     "
     {{ block.shopify_attributes }}
-    aria-hidden="{% if block_index == 0 %}false{% else %}true{% endif %}"
+    {% unless is_marquee %}
+      aria-hidden="{% if block_index == 0 %}false{% else %}true{% endif %}"
+    {% endunless %}
   >
     <p class="announcement-bar__text">
       {{ block.settings.text }}
@@ -43,7 +55,7 @@
         </span>
       </a>
     {% endif %}
-  </slideshow-slide>
+  </{{ slide_tag }}>
 {%- endunless -%}
 
 {% schema %}
@@ -110,6 +122,10 @@
         {
           "value": "0.875rem",
           "label": "14px"
+        },
+        {
+          "value": "0.9375rem",
+          "label": "15px"
         },
         {
           "value": "1rem",

@@ -191,6 +191,8 @@ class MarqueeComponent extends Component {
     clone.setAttribute('aria-hidden', 'true');
     clone.removeAttribute('ref');
 
+    for (const link of clone.querySelectorAll('a')) link.tabIndex = -1;
+
     this.refs.wrapper.appendChild(clone);
   }
 
@@ -203,7 +205,10 @@ class MarqueeComponent extends Component {
     if (!marqueeItems[0]) return;
 
     for (let i = 0; i < numberOfCopies - 1; i++) {
-      const clone = marqueeItems[0].cloneNode(true);
+      const clone = /** @type {HTMLElement} */ (marqueeItems[0].cloneNode(true));
+      clone.setAttribute('aria-hidden', 'true');
+      clone.removeAttribute('ref');
+      for (const link of clone.querySelectorAll('a')) link.tabIndex = -1;
       content.appendChild(clone);
     }
   }

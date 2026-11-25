@@ -1,6 +1,12 @@
 
 
-{% if section.blocks.size > 1 %}
+{% if section.settings.marquee %}
+  <script
+    src="{{ 'marquee.js' | asset_url }}"
+    type="module"
+    fetchpriority="low"
+  ></script>
+{% elsif section.blocks.size > 1 %}
   <script
     src="{{ 'announcement-bar.js' | asset_url }}"
     type="module"
@@ -8,13 +14,42 @@
   ></script>
 {% endif %}
 
+{% capture announcement_blocks %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
 {% render 'contrast-override', background_color: section.settings.background_color, section_id: section.id %}
 
 <div class="section-background color-custom-{{ section.id }}"></div>
 <aside
-  class="announcement-bar spacing-style section section--{{ section.settings.section_width }} color-custom-{{ section.id }}"
+  class="announcement-bar announcement-bar--align-{{ section.settings.text_alignment }} spacing-style section section--{{ section.settings.section_width }} color-custom-{{ section.id }}"
   style="{% render 'spacing-padding', settings: section.settings %}; --border-bottom-width: {{ section.settings.divider_width }}px;{% if section.settings.divider_color != blank %} --color-border: {{ section.settings.divider_color }};{% endif %}"
 >
+  {% if section.settings.marquee %}
+    <marquee-component
+      class="announcement-bar__marquee"
+      style="--marquee-direction: normal;"
+      data-speed-factor="{{ section.settings.marquee_duration }}"
+      data-movement-direction="normal"
+    >
+      <div
+        class="announcement-bar__marquee-wrapper"
+        ref="wrapper"
+      >
+        <div
+          class="announcement-bar__marquee-content"
+          ref="content"
+        >
+          <div
+            class="announcement-bar__marquee-items"
+            ref="marqueeItems[]"
+          >
+            {{ announcement_blocks }}
+          </div>
+        </div>
+      </div>
+    </marquee-component>
+  {% else %}
   {% liquid
     assign autoplay = false
     assign show_arrows = false
@@ -35,9 +70,10 @@
     {% endif %}
 
     <div class="announcement-bar__slides">
-      {% content_for 'blocks' %}
+      {{ announcement_blocks }}
     </div>
   </announcement-bar-component>
+  {% endif %}
 </aside>
 
 {% stylesheet %}
@@ -126,6 +162,102 @@
     position: absolute;
     inset: 0;
   }
+
+  .announcement-bar--align-left .announcement-bar__slides {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  /* Without arrows the text can use the whole row */
+  .announcement-bar--align-left .announcement-bar__slides:only-child {
+    width: 100%;
+  }
+
+  .announcement-bar--align-left .announcement-bar__text {
+    text-align: start;
+    line-height: 1.35;
+  }
+
+  .announcement-bar--align-left.section--full-width .announcement-bar__slider {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: var(--brand-content-max-width);
+    margin-inline: auto;
+    padding-inline: var(--brand-section-padding-inline);
+  }
+
+  .announcement-bar__marquee {
+    --marquee-gap: var(--brand-section-padding-inline);
+
+    display: block;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .announcement-bar__marquee-wrapper {
+    display: flex;
+    gap: var(--marquee-gap);
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  .announcement-bar__marquee-content,
+  .announcement-bar__marquee-items {
+    display: flex;
+    align-items: center;
+    gap: var(--marquee-gap);
+    min-width: max-content;
+  }
+
+  .announcement-bar__marquee .announcement-bar__slide {
+    position: relative;
+    max-width: none;
+  }
+
+  .announcement-bar__marquee .announcement-bar__text {
+    white-space: nowrap;
+    line-height: 1.35;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .announcement-bar__marquee:not([data-disabled]) .announcement-bar__marquee-wrapper {
+      animation: announcement-marquee var(--marquee-speed) linear infinite var(--marquee-direction);
+    }
+
+    .announcement-bar__marquee:focus-within .announcement-bar__marquee-wrapper {
+      animation-play-state: paused;
+    }
+  }
+
+  /* Reduced motion: show each message once, wrapped and still */
+  @media (prefers-reduced-motion: reduce) {
+    .announcement-bar__marquee-wrapper,
+    .announcement-bar__marquee-content,
+    .announcement-bar__marquee-items {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      min-width: 0;
+      white-space: normal;
+    }
+
+    .announcement-bar__marquee-content[aria-hidden='true'],
+    .announcement-bar__marquee-items[aria-hidden='true'] {
+      display: none;
+    }
+
+    .announcement-bar__marquee .announcement-bar__text {
+      white-space: normal;
+      text-align: center;
+    }
+  }
+
+  @keyframes announcement-marquee {
+    to {
+      transform: translate3d(calc(-50% - (var(--marquee-gap) / 2)), 0, 0);
+    }
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -141,7 +273,26 @@
   },
   "settings": [
     {
+      "type": "checkbox",
+      "id": "marquee",
+      "label": "t:settings.marquee",
+      "default": false
+    },
+    {
       "type": "range",
+      "id": "marquee_duration",
+      "label": "t:settings.marquee_duration",
+      "info": "t:info.marquee_duration",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "sec",
+      "default": 20,
+      "visible_if": "{{ section.settings.marquee }}"
+    },
+    {
+      "type": "range",
+      "visible_if": "{{ section.settings.marquee == false }}",
       "id": "speed",
       "label": "t:settings.scroll_speed",
       "min": 2,
@@ -168,6 +319,23 @@
         }
       ],
       "default": "page-width"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "t:settings.alignment",
+      "visible_if": "{{ section.settings.marquee == false }}",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "color",
