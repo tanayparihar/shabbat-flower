@@ -14,7 +14,12 @@
 {% liquid
   assign slideshow_ref = ref | default: 'resourceListCarousel'
 
-  if settings.section_width == 'page-width'
+  assign carousel_class = 'resource-list__carousel'
+  if settings.carousel_contained
+    assign carousel_class = 'resource-list__carousel resource-list__carousel--contained'
+  endif
+
+  if settings.section_width == 'page-width' and settings.carousel_contained != true
     assign slideshow_gutters = 'start end'
     assign gutter_style = '--gutter-slide-width: var(--util-page-margin-offset);'
   else
@@ -41,7 +46,7 @@
 <div style="{{ gutter_style }} --slide-width-max: {{ slide_width_max | default: '300px' }};">
   {% render 'slideshow',
     ref: slideshow_ref,
-    class: 'resource-list__carousel',
+    class: carousel_class,
     slides: slides,
     show_arrows: show_arrows,
     icon_style: settings.icons_style,
@@ -144,6 +149,24 @@
 
     slideshow-component[actioned] & {
       content-visibility: visible;
+    }
+  }
+
+  /* Contained: slides stop at the page width, with no part of the next one showing */
+  .resource-list__carousel--contained .resource-list__slide {
+    --peek-next-slide-size: 0px;
+  }
+
+  /* Arrows sit in the page margin, beside the cards rather than on them */
+  .resource-list__carousel.resource-list__carousel--contained slideshow-arrows {
+    padding-inline: 0;
+    margin-inline: calc(-1 * min(var(--page-margin), 3.5rem));
+  }
+
+  /* Phones have no room beside the cards and scroll by swiping */
+  @media screen and (max-width: 749px) {
+    .resource-list__carousel.resource-list__carousel--contained slideshow-arrows {
+      display: none;
     }
   }
 {% endstylesheet %}

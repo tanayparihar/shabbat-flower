@@ -1,0 +1,93 @@
+{% doc %}
+  Renders a product's type as a small uppercase label, for example on a product card.
+  Uses the closest product. Renders nothing when the product has no type.
+
+  @example
+  {% content_for 'block', type: 'product-type', id: 'type', closest.product: product %}
+{% enddoc %}
+
+{% if closest.product.type != blank %}
+  <p
+    class="product-type h6 spacing-style"
+    style="
+      {% render 'spacing-style', settings: block.settings %}
+      {% if block.settings.text_color != blank %}--color: {{ block.settings.text_color }};{% endif %}
+    "
+    {{ block.shopify_attributes }}
+  >
+    {{- closest.product.type | escape -}}
+  </p>
+{% endif %}
+
+{% stylesheet %}
+  .product-type {
+    width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.product_type",
+  "tag": null,
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:settings.text_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.product_type",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}

@@ -16,6 +16,11 @@
 {%- enddoc -%}
 
 {% stylesheet %}
+  /* Keeps cards in a row the same height whether a name takes one line or two */
+  .text-block--two-lines > * {
+    min-height: 2lh;
+  }
+
   .text-block--italic > * {
     font-style: italic;
   }

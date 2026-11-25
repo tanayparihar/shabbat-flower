@@ -53,6 +53,9 @@
     if block_settings.italic
       echo ' text-block--italic '
     endif
+    if block_settings.reserve_two_lines
+      echo ' text-block--two-lines '
+    endif
     if is_rte
       echo ' rte '
     endif

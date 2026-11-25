@@ -100,7 +100,7 @@
 <div
   class="
     resource-list
-    {% if settings.layout_type == 'carousel' %}
+    {% if settings.layout_type == 'carousel' and settings.carousel_contained != true %}
       force-full-width
     {% endif %}
     {% if settings.carousel_on_mobile and settings.layout_type != 'carousel' %}

@@ -9,6 +9,7 @@
  */
 {
   "names": {
+    "product_type": "Product type",
     "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
@@ -174,6 +175,8 @@
     "disclosures": "Divulgations"
   },
   "settings": {
+    "carousel_contained": "Keep carousel within the page width",
+    "reserve_two_lines": "Always leave room for two lines",
     "screen_height": "Height as part of the screen",
     "accessible_label": "Label for screen readers",
     "default_note": "Note before a choice is made",

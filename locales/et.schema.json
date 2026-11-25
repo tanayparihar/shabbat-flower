@@ -250,6 +250,7 @@
     "show_physical_stores_help": "Kuva ka füüsiliseks müügikeskkonnaks märgitud asukohad, kus toode on laos, isegi kui seal ei pakuta järeletulemist."
   },
   "names": {
+    "product_type": "Product type",
     "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
@@ -701,6 +702,8 @@
     "below_media": "Meedia all"
   },
   "settings": {
+    "carousel_contained": "Keep carousel within the page width",
+    "reserve_two_lines": "Always leave room for two lines",
     "screen_height": "Height as part of the screen",
     "accessible_label": "Label for screen readers",
     "default_note": "Note before a choice is made",

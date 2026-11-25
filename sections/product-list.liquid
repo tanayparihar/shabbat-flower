@@ -268,6 +268,13 @@
       "visible_if": "{{ section.settings.icons_style != 'none' and section.settings.layout_type == 'carousel' or section.settings.carousel_on_mobile == true }}"
     },
     {
+      "type": "checkbox",
+      "id": "carousel_contained",
+      "label": "t:settings.carousel_contained",
+      "default": false,
+      "visible_if": "{{ section.settings.layout_type == 'carousel' }}"
+    },
+    {
       "type": "header",
       "content": "t:content.section_layout"
     },

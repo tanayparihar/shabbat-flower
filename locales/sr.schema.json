@@ -250,6 +250,7 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "product_type": "Product type",
     "option_pills": "Option pills",
     "how_it_works": "How it works",
     "step": "Step",
@@ -701,6 +702,8 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "carousel_contained": "Keep carousel within the page width",
+    "reserve_two_lines": "Always leave room for two lines",
     "screen_height": "Height as part of the screen",
     "accessible_label": "Label for screen readers",
     "default_note": "Note before a choice is made",
