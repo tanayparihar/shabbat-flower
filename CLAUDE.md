@@ -9,6 +9,11 @@ Custom storefront for Shabbat Flowers Club, built as a restyle and extension of 
 - Make the smallest change that achieves the design. Don't refactor Horizon code that isn't involved.
 - Never commit or push any changes. Only the code owner does that.
 
+## Images
+
+- Client requirement: never crop product images (cards, product page, cart, search). Keep each image's own aspect ratio (`image_ratio: adapt`, `height: auto`); no fixed ratios, fixed heights or `object-fit: cover`. This overrides Framer.
+- Follow the same rule for other content photos. Hero banners are the exception and may fill their frame.
+
 ## Portability
 
 The theme is built on a development account and will later move to the client's store. It must work there without code changes.

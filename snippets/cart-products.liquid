@@ -170,7 +170,7 @@
                       endif
                       if block_settings.image_ratio == 'portrait'
                         assign ratio = 0.8
-                      elsif block_settings.image_ratio == 'adapt'
+                      elsif block_settings.image_ratio != 'square'
                         assign ratio = item.image.aspect_ratio
                       endif
                     %}

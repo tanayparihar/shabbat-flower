@@ -273,7 +273,7 @@
                   "settings": {
                     "image": "shopify://shop_images/Colored_De_temporada_collection.jpg",
                     "link": "shopify://pages/subscribe",
-                    "image_ratio": "four-three",
+                    "image_ratio": "adapt",
                     "width": "fill",
                     "width_mobile": "fill",
                     "height": "fit",
@@ -519,7 +519,7 @@
                   "settings": {
                     "image": "shopify://shop_images/Lavan_collection.jpg",
                     "link": "shopify://pages/subscribe",
-                    "image_ratio": "four-three",
+                    "image_ratio": "adapt",
                     "width": "fill",
                     "width_mobile": "fill",
                     "height": "fit",
@@ -867,7 +867,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/subscription_gift_image.jpg",
-            "image_ratio": "seven-eight",
+            "image_ratio": "adapt",
             "width": "custom",
             "custom_width": 60,
             "width_mobile": "fill",
@@ -878,7 +878,7 @@
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "screen_height": 75
+            "screen_height": 0
           },
           "blocks": {}
         },
@@ -1153,7 +1153,7 @@
             "card_image": {
               "type": "_product-card-gallery",
               "settings": {
-                "image_ratio": "ten-nine",
+                "image_ratio": "adapt",
                 "border": "none",
                 "border_radius": 12,
                 "padding-block-start": 0,
@@ -1537,7 +1537,6 @@
       ],
       "settings": {
         "heading": "Flowers, beyond the Friday",
-        "card_height": 680,
         "background_color": "{{ settings.color_palette.background }}",
         "padding_start": 100,
         "padding_end": 100

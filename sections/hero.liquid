@@ -673,8 +673,8 @@
     }
   }
 
-  /* Phones: text on a plain background with the image underneath, so neither covers the other */
-  @media screen and (max-width: 749px) {
+  /* Phones and upright tablets: text on a plain background with the image underneath, so neither covers the other */
+  @media screen and (max-width: 749px), screen and (orientation: portrait) and (max-width: 1100px) {
     .hero.hero--text-above-mobile {
       min-height: 0;
     }
@@ -697,6 +697,13 @@
 
     .hero--text-above-mobile .text-block.h1 > * {
       font-size: min(var(--font-size--h1), 9.5vw);
+    }
+  }
+
+  /* Upright tablets: a wider photo shape, so text and photo fit on one screen */
+  @media screen and (min-width: 750px) and (orientation: portrait) and (max-width: 1100px) {
+    .hero--text-above-mobile .hero__media-grid {
+      aspect-ratio: 4 / 3;
     }
   }
 

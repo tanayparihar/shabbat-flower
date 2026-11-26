@@ -423,6 +423,9 @@
     "comparison_slider": "तुलना स्लाइडर"
   },
   "options": {
+    "open_product_page": "Open product page",
+    "add_to_cart": "Add to cart",
+    "text_link": "Text link",
     "slightly_loose": "Slightly loose",
     "equal_columns": "Equal columns",
     "narrow_second_column": "Narrow second column",
@@ -710,6 +713,7 @@
     "below_media": "मीडियाच्या खाली"
   },
   "settings": {
+    "button_action": "Button action",
     "reveal_animations": "Scroll and hover animations",
     "author": "Author",
     "stars": "Stars",
@@ -728,7 +732,7 @@
     "eyebrow": "Small label",
     "note": "Closing note",
     "max_lines": "Line limit on larger screens",
-    "text_above_media_on_mobile": "Show text above the image on phones",
+    "text_above_media_on_mobile": "Show text above the image on phones and upright tablets",
     "media_position_x": "Image focus, left to right",
     "media_position_y": "Image focus, top to bottom",
     "column_layout": "Column layout",

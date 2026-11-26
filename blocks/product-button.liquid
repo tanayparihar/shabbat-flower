@@ -1,9 +1,24 @@
 {% doc %}
-  Renders a button that opens the closest product's page, for example on a product card.
+  Renders a button for the closest product, for example on a product card. It opens the
+  product page, or adds the product to the cart. Products with variants or subscriptions
+  open the product page instead, so the customer can choose.
 
   @example
   {% content_for 'block', type: 'product-button', id: 'button', closest.product: product %}
 {% enddoc %}
+
+{% liquid
+  assign product = closest.product
+  assign button_class = block.settings.style_class
+  if button_class == 'link'
+    assign button_class = 'button-unstyled product-button__link'
+  endif
+
+  assign adds_to_cart = false
+  if block.settings.action == 'add' and product.variants_count == 1 and product.selling_plan_groups.size == 0
+    assign adds_to_cart = true
+  endif
+%}
 
 {% if block.settings.label != blank %}
   <div
@@ -11,13 +26,57 @@
     style="{% render 'spacing-style', settings: block.settings %}"
     {{ block.shopify_attributes }}
   >
-    <a
-      class="{{ block.settings.style_class }}"
-      href="{{ closest.product.url | default: '#' }}"
-    >
-      {{- block.settings.label | escape -}}
-      <span class="visually-hidden">: {{ closest.product.title | escape }}</span>
-    </a>
+    {% if adds_to_cart %}
+      {% liquid
+        assign button_text = block.settings.label | escape
+        unless product.available
+          assign button_text = 'products.product.sold_out' | t
+        endunless
+      %}
+      <product-form-component
+        data-section-id="{{ section.id }}"
+        data-product-id="{{ product.id }}"
+        on:submit="/handleSubmit"
+      >
+        <div
+          class="visually-hidden"
+          aria-live="assertive"
+          role="status"
+          aria-atomic="true"
+          ref="liveRegion"
+        ></div>
+        {%- assign product_form_id = 'ProductButton-' | append: block.id | append: '-' | append: product.id -%}
+        {%- form 'product', product, id: product_form_id, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+          <input
+            type="hidden"
+            name="id"
+            ref="variantId"
+            value="{{ product.selected_or_first_available_variant.id }}"
+          >
+          <input
+            type="hidden"
+            name="quantity"
+            value="{{ product.selected_or_first_available_variant.quantity_rule.min | default: 1 }}"
+          >
+          {% render 'add-to-cart-button',
+            add_to_cart_text: button_text,
+            class: button_class,
+            can_add_to_cart: product.available,
+            product: product
+          %}
+        {%- endform -%}
+      </product-form-component>
+      {% render 'add-to-cart-button-styles' %}
+      {% render 'fly-to-cart-styles' %}
+    {% else %}
+      <a
+        class="{{ button_class }}"
+        href="{{ product.url | default: '#' }}"
+      >
+        {{- block.settings.label | escape -}}
+        <span class="visually-hidden">: {{ product.title | escape }}</span>
+      </a>
+    {% endif %}
   </div>
 {% endif %}
 
@@ -28,6 +87,34 @@
     z-index: var(--layer-raised);
     display: flex;
     width: 100%;
+  }
+
+  /* Text link style: label with an arrow, no button box */
+  .product-button .product-button__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 2.75rem;
+    padding: 0;
+    color: var(--color-brand-berry);
+    font-family: var(--font-h6--family);
+    font-size: var(--font-h6--size);
+    font-weight: var(--font-h6--weight);
+    line-height: var(--font-h6--line-height);
+    letter-spacing: var(--font-h6--letter-spacing);
+    text-transform: var(--font-h6--case);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .product-button .product-button__link::after {
+    content: '→' / '';
+  }
+
+  .product-button .product-button__link:hover {
+    color: var(--color-brand-berry);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
   }
 {% endstylesheet %}
 
@@ -44,6 +131,22 @@
     },
     {
       "type": "select",
+      "id": "action",
+      "label": "t:settings.button_action",
+      "options": [
+        {
+          "value": "view",
+          "label": "t:options.open_product_page"
+        },
+        {
+          "value": "add",
+          "label": "t:options.add_to_cart"
+        }
+      ],
+      "default": "view"
+    },
+    {
+      "type": "select",
       "id": "style_class",
       "label": "t:settings.style",
       "options": [
@@ -54,6 +157,10 @@
         {
           "value": "button-secondary",
           "label": "t:options.secondary"
+        },
+        {
+          "value": "link",
+          "label": "t:options.text_link"
         }
       ],
       "default": "button"
