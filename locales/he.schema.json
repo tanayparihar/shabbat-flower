@@ -710,6 +710,7 @@
     "direction_top_start": "למעלה, התחלה"
   },
   "settings": {
+    "reveal_animations": "Scroll and hover animations",
     "author": "Author",
     "stars": "Stars",
     "rating_label": "Rating line",

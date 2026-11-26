@@ -1319,6 +1319,12 @@
     "settings": [
       {
         "type": "checkbox",
+        "id": "reveal_animations",
+        "label": "t:settings.reveal_animations",
+        "default": true
+      },
+      {
+        "type": "checkbox",
         "id": "page_transition_enabled",
         "label": "t:settings.page_transition_enabled",
         "default": true

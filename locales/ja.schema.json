@@ -182,6 +182,7 @@
     "disclosures": "開示情報"
   },
   "settings": {
+    "reveal_animations": "Scroll and hover animations",
     "author": "Author",
     "stars": "Stars",
     "rating_label": "Rating line",

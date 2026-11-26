@@ -182,6 +182,7 @@
     "disclosures": "資訊揭露"
   },
   "settings": {
+    "reveal_animations": "Scroll and hover animations",
     "author": "Author",
     "stars": "Stars",
     "rating_label": "Rating line",

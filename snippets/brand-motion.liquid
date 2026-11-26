@@ -1,0 +1,19 @@
+{% doc %}
+  Loads the Shabbat Flowers animations when enabled in Theme settings > Animations:
+  hover effects everywhere, and fade-ups on the homepage and content pages.
+  Render in the head after `brand-tokens`.
+
+  @example
+  {% render 'brand-motion' %}
+{% enddoc %}
+
+{% if settings.reveal_animations %}
+  {{ 'brand-motion.css' | asset_url | stylesheet_tag }}
+
+  {% if template.name == 'index' or template.name == 'page' %}
+    <script
+      src="{{ 'brand-motion.js' | asset_url }}"
+      type="module"
+    ></script>
+  {% endif %}
+{% endif %}
