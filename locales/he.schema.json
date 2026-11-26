@@ -250,6 +250,8 @@
     "show_physical_stores_help": "הצג גם מיקומים המסומנים כחזית חנות פיזית שהמוצר זמין בהם במלאי, גם כאשר הם לא מציעים איסוף."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

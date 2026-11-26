@@ -250,6 +250,8 @@
     "show_physical_stores_help": "Kuva ka füüsiliseks müügikeskkonnaks märgitud asukohad, kus toode on laos, isegi kui seal ei pakuta järeletulemist."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

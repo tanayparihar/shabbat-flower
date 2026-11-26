@@ -1,0 +1,92 @@
+{% doc %}
+  Renders one short line about a product, for example on a product card.
+  Uses the product's `custom.short_description` metafield, or the first words of
+  its description when the metafield is empty. Renders nothing when both are empty.
+
+  @example
+  {% content_for 'block', type: 'product-summary', id: 'summary', closest.product: product %}
+{% enddoc %}
+
+{% liquid
+  assign summary = closest.product.metafields.custom.short_description.value
+  if summary == blank
+    assign summary = closest.product.description | strip_html | strip | truncatewords: 12
+  endif
+%}
+
+{% if summary != blank %}
+  <p
+    class="product-summary paragraph spacing-style"
+    style="{% render 'spacing-style', settings: block.settings %}"
+    {{ block.shopify_attributes }}
+  >
+    {{- summary | escape -}}
+  </p>
+{% endif %}
+
+{% stylesheet %}
+  .product-summary {
+    width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.product_summary",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.product_summary",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}

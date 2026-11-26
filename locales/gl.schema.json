@@ -250,6 +250,8 @@
     "show_physical_stores_help": "Listar tamén as localizacións marcadas como escaparate físico que teñan o produto en stock, aínda que non ofrezan a recollida."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

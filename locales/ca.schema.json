@@ -250,6 +250,8 @@
     "show_physical_stores_help": "Mostra també les ubicacions marcades com a aparador físic que tenen el producte en estoc, encara que no ofereixin recollida."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

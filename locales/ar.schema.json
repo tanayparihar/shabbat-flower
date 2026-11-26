@@ -250,6 +250,8 @@
     "show_physical_stores_help": "إدراج المواقع المحددة كواجهة متجر فعلية والتي يتوفر فيها المنتج في المخزون أيضًا، حتى عندما لا توفر استلام الطلب."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

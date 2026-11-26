@@ -250,6 +250,8 @@
     "show_physical_stores_help": "ასევე ჩამოთვალე ლოკაციები, რომლებიც მონიშნულია, როგორც ფიზიკური ვიტრინა და პროდუქტი მარაგში აქვთ, მაშინაც კი, თუ გატანას არ სთავაზობენ."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

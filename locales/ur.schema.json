@@ -250,6 +250,8 @@
     "show_physical_stores_help": "ایسی لوکیشن کو بھی فہرست میں شامل کریں جو فزیکل اسٹور فرنٹ کے طور پر نشان زد ہیں اور جہاں پروڈکٹ اسٹاک میں موجود ہے، چاہے وہ پک اپ کی سہولت فراہم نہ کرتی ہوں۔"
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

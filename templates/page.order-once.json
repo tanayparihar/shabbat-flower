@@ -1,0 +1,380 @@
+/*
+ * Order Once page. Assign this template to the page in Shopify admin.
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "hero_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>For the table<br/>that has a reason</h1>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hero_subheading": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the person that deserves it</p>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "3rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "balance",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hero_note": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Order at least 3 days ahead. We deliver Fridays and Mondays.</p>",
+            "text_color": "",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1.375rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 50,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "hero_heading",
+        "hero_subheading",
+        "hero_note"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-end",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 10,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 80,
+        "background_color": "rgba(0,0,0,0)",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 90,
+        "padding-block-end": 90,
+        "image_1": "shopify://shop_images/Order_Once_hero_darkened.jpg",
+        "media_position_x": 75,
+        "media_position_y": 50,
+        "text_above_media_on_mobile": true
+      }
+    },
+    "compositions": {
+      "type": "product-list",
+      "name": "Choose your composition",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "grid_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>What are you ordering for?</p>",
+                "text_color": "{{ settings.color_palette.color3 }}",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "max_lines": "0",
+                "italic": false
+              },
+              "blocks": {}
+            },
+            "grid_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Choose your composition</h2>",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0,
+                "max_lines": "0",
+                "italic": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "grid_eyebrow",
+            "grid_heading"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 16,
+            "background_color": "{{ settings.color_palette.color5 }}",
+            "border": "none",
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_image": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "card_type": {
+              "type": "product-type",
+              "settings": {
+                "text_color": "{{ settings.color_palette.color3 }}",
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_title": {
+              "type": "product-title",
+              "settings": {
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.625rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "reserve_two_lines": false,
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "background": false,
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_summary": {
+              "type": "product-summary",
+              "settings": {
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_price": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "custom",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_button": {
+              "type": "product-button",
+              "settings": {
+                "label": "Order now",
+                "style_class": "button",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "card_image",
+            "card_type",
+            "card_title",
+            "card_summary",
+            "card_price",
+            "card_button"
+          ]
+        },
+        "grid_link": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/contact\">For events or bigger, custom orders please visit The Stem and The Flower consultation page. →</a></p>",
+            "text_color": "{{ settings.color_palette.color7 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h6",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0",
+            "italic": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "grid_link"
+      ],
+      "settings": {
+        "collection": "order-once",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 6,
+        "columns": 3,
+        "mobile_columns": "1",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 40,
+        "rows_gap": 40,
+        "icons_style": "chevron",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "center",
+        "gap": 64,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100,
+        "carousel_contained": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "compositions"
+  ]
+}

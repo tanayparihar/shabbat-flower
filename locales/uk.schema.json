@@ -250,6 +250,8 @@
     "show_physical_stores_help": "Також показувати розташування, позначені як фізична вітрина, де товар є в наявності, навіть якщо вони не пропонують самовивіз."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

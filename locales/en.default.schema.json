@@ -258,6 +258,8 @@
     "show_physical_stores_help": "Also list locations marked as a physical storefront that have the product in stock, even when they don't offer pickup."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

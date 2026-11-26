@@ -250,6 +250,8 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",

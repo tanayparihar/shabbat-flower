@@ -1,0 +1,113 @@
+{% doc %}
+  Renders a button that opens the closest product's page, for example on a product card.
+
+  @example
+  {% content_for 'block', type: 'product-button', id: 'button', closest.product: product %}
+{% enddoc %}
+
+{% if block.settings.label != blank %}
+  <div
+    class="product-button spacing-style"
+    style="{% render 'spacing-style', settings: block.settings %}"
+    {{ block.shopify_attributes }}
+  >
+    <a
+      class="{{ block.settings.style_class }}"
+      href="{{ closest.product.url | default: '#' }}"
+    >
+      {{- block.settings.label | escape -}}
+      <span class="visually-hidden">: {{ closest.product.title | escape }}</span>
+    </a>
+  </div>
+{% endif %}
+
+{% stylesheet %}
+  /* Sits above the link that covers the whole product card */
+  .product-button {
+    position: relative;
+    z-index: var(--layer-raised);
+    display: flex;
+    width: 100%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.product_button",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "t:settings.label",
+      "default": "t:text_defaults.button_label"
+    },
+    {
+      "type": "select",
+      "id": "style_class",
+      "label": "t:settings.style",
+      "options": [
+        {
+          "value": "button",
+          "label": "t:options.primary"
+        },
+        {
+          "value": "button-secondary",
+          "label": "t:options.secondary"
+        }
+      ],
+      "default": "button"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "t:settings.left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "t:settings.right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.product_button",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}

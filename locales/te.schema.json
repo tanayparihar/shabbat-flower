@@ -250,6 +250,8 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "product_summary": "Product summary",
+    "product_button": "Product button",
     "photo_strip": "Photo strip",
     "photo": "Photo",
     "reviews": "Reviews",
