@@ -250,6 +250,9 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "card_showcase": "Card showcase",
+    "flower_care": "Flower care",
+    "care_step": "Care step",
     "product_summary": "Product summary",
     "product_button": "Product button",
     "photo_strip": "Photo strip",
@@ -423,6 +426,8 @@
     "comparison_slider": "పోలిక స్లైడర్"
   },
   "options": {
+    "first_column": "First column",
+    "second_column": "Second column",
     "open_product_page": "Open product page",
     "add_to_cart": "Add to cart",
     "text_link": "Text link",
@@ -713,6 +718,12 @@
     "below_media": "మీడియా దిగువన"
   },
   "settings": {
+    "row_spacing": "Row spacing",
+    "caption": "Caption",
+    "column": "Column",
+    "bold_opening": "Bold opening phrase",
+    "first_column_title": "First column title",
+    "second_column_title": "Second column title",
     "button_action": "Button action",
     "reveal_animations": "Scroll and hover animations",
     "author": "Author",

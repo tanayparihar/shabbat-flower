@@ -22,6 +22,10 @@ const TARGETS = [
   '.reviews__header',
   '.reviews__card',
   '.photo-strip__content',
+  '.card-showcase__content > *',
+  '.card-showcase__card',
+  '.flower-care__heading',
+  '.flower-care__column',
 ].join(',');
 
 /* The hero animates with CSS; forms and dialogs must never be hidden */

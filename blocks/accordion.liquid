@@ -20,6 +20,7 @@
     {% render 'spacing-style', settings: block_settings %}
     {% render 'border-override', settings: block_settings %}
     {% if block_settings.divider_color != blank %} --color-border: {{ block_settings.divider_color }};{% endif %}
+    --accordion-row-spacing: {{ block_settings.row_spacing | default: 0 }}px;
   "
   {{ block.shopify_attributes }}
 >
@@ -67,6 +68,16 @@
       "label": "t:settings.divider_color",
       "placeholder": "t:settings.default",
       "visible_if": "{{ block.settings.dividers }}"
+    },
+    {
+      "type": "range",
+      "id": "row_spacing",
+      "label": "t:settings.row_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 0
     },
     {
       "type": "select",

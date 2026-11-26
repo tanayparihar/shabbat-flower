@@ -250,6 +250,9 @@
     "show_physical_stores_help": "Mostra també les ubicacions marcades com a aparador físic que tenen el producte en estoc, encara que no ofereixin recollida."
   },
   "names": {
+    "card_showcase": "Card showcase",
+    "flower_care": "Flower care",
+    "care_step": "Care step",
     "product_summary": "Product summary",
     "product_button": "Product button",
     "photo_strip": "Photo strip",
@@ -423,6 +426,8 @@
     "comparison_slider": "Control lliscant de comparació"
   },
   "options": {
+    "first_column": "First column",
+    "second_column": "Second column",
     "open_product_page": "Open product page",
     "add_to_cart": "Add to cart",
     "text_link": "Text link",
@@ -713,6 +718,12 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "row_spacing": "Row spacing",
+    "caption": "Caption",
+    "column": "Column",
+    "bold_opening": "Bold opening phrase",
+    "first_column_title": "First column title",
+    "second_column_title": "Second column title",
     "button_action": "Button action",
     "reveal_animations": "Scroll and hover animations",
     "author": "Author",

@@ -258,6 +258,9 @@
     "show_physical_stores_help": "Also list locations marked as a physical storefront that have the product in stock, even when they don't offer pickup."
   },
   "names": {
+    "card_showcase": "Card showcase",
+    "flower_care": "Flower care",
+    "care_step": "Care step",
     "product_summary": "Product summary",
     "product_button": "Product button",
     "photo_strip": "Photo strip",
@@ -438,6 +441,8 @@
     "comparison_slider": "Comparison slider"
   },
   "options": {
+    "first_column": "First column",
+    "second_column": "Second column",
     "open_product_page": "Open product page",
     "add_to_cart": "Add to cart",
     "text_link": "Text link",
@@ -771,6 +776,12 @@
     "below_media": "Below media"
   },
   "settings": {
+    "row_spacing": "Row spacing",
+    "caption": "Caption",
+    "column": "Column",
+    "bold_opening": "Bold opening phrase",
+    "first_column_title": "First column title",
+    "second_column_title": "Second column title",
     "button_action": "Button action",
     "reveal_animations": "Scroll and hover animations",
     "author": "Author",

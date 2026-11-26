@@ -52,6 +52,12 @@
     line-height: var(--summary-font-line-height);
     text-transform: var(--summary-font-case);
     min-height: var(--minimum-touch-target);
+    padding-block: var(--accordion-row-spacing, 0);
+  }
+
+  /* Spaced rows also inset the question and answer from the ends of the lines */
+  .accordion .details {
+    padding-inline: min(var(--accordion-row-spacing, 0px), 16px);
   }
 
   .details__icon {

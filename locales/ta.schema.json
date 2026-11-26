@@ -250,6 +250,9 @@
     "show_physical_stores_help": "நேரில் பெறுதல் வசதியை வழங்காவிட்டாலும், தயாரிப்பு சரக்கு இருப்பில் உள்ள, நேரடி ஸ்டோர்ஃபிரண்ட் எனக் குறிக்கப்பட்டுள்ள இடங்களையும் பட்டியலிடவும்."
   },
   "names": {
+    "card_showcase": "Card showcase",
+    "flower_care": "Flower care",
+    "care_step": "Care step",
     "product_summary": "Product summary",
     "product_button": "Product button",
     "photo_strip": "Photo strip",
@@ -423,6 +426,8 @@
     "comparison_slider": "ஒப்பீட்டு ஸ்லைடர்"
   },
   "options": {
+    "first_column": "First column",
+    "second_column": "Second column",
     "open_product_page": "Open product page",
     "add_to_cart": "Add to cart",
     "text_link": "Text link",
@@ -713,6 +718,12 @@
     "below_media": "மீடியாவுக்குக் கீழே"
   },
   "settings": {
+    "row_spacing": "Row spacing",
+    "caption": "Caption",
+    "column": "Column",
+    "bold_opening": "Bold opening phrase",
+    "first_column_title": "First column title",
+    "second_column_title": "Second column title",
     "button_action": "Button action",
     "reveal_animations": "Scroll and hover animations",
     "author": "Author",

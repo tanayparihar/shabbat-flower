@@ -1218,12 +1218,625 @@
         "padding-block-end": 100,
         "carousel_contained": false
       }
+    },
+    "nefesh": {
+      "type": "card-showcase",
+      "name": "Nefesh Jardin cards",
+      "blocks": {
+        "add_on": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/x2_add_on_cards.png",
+            "caption": "Add on cards"
+          }
+        },
+        "welcome": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/free_card_sets.png",
+            "caption": "Welcome cards"
+          }
+        }
+      },
+      "block_order": [
+        "add_on",
+        "welcome"
+      ],
+      "settings": {
+        "icon": "shopify://shop_images/Nefesh_Jardin_icon.svg",
+        "label": "Nefesh Jardin",
+        "heading": "Personal message on Joanne’s cards",
+        "text": "<p>Nefesh Jardin is Joanne’s own creation, inspired by her background and her floristry. Add a personal message on a botanical art card by Joanne to any order.</p>",
+        "link_label": "Visit the Nefesh Jardin shop",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
+    },
+    "flower_care": {
+      "type": "flower-care",
+      "blocks": {
+        "care_1": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_3.svg",
+            "lead": "Trim the stems.",
+            "text": "Remove rubber bands. Cut at an angle, removing at least 2cm."
+          }
+        },
+        "care_2": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_4.svg",
+            "lead": "Add the flower food.",
+            "text": "Dissolve the enclosed packet in the water. It feeds and protects your flowers best."
+          }
+        },
+        "care_3": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_6.svg",
+            "lead": "Choose the right spot.",
+            "text": "Away from direct sunlight, heat, air vents and the fruit bowl."
+          }
+        },
+        "care_4": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_5.svg",
+            "lead": "Change the water and refresh.",
+            "text": "Every two days. Re-trim stems. Remove wilting petals."
+          }
+        },
+        "care_5": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_7.svg",
+            "lead": "Vase not included.",
+            "text": "Please have a vase ready before your flowers arrive."
+          }
+        },
+        "care_6": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_6.svg",
+            "lead": "Choose the right spot.",
+            "text": "Away from direct sunlight, heat, air vents and the fruit bowl."
+          }
+        },
+        "care_7": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_5.svg",
+            "lead": "Change the water.",
+            "text": "Every two days or keep adding water daily."
+          }
+        },
+        "care_8": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_2.svg",
+            "lead": "Remove wilting petals.",
+            "text": "Check every few days and remove any petals that are past their best."
+          }
+        }
+      },
+      "block_order": [
+        "care_1",
+        "care_2",
+        "care_3",
+        "care_4",
+        "care_5",
+        "care_6",
+        "care_7",
+        "care_8"
+      ],
+      "settings": {
+        "heading": "How to make them last",
+        "column_1_title": "Wrapped Bouquet",
+        "column_2_title": "Centrepiece",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding_start": 100,
+        "padding_end": 40
+      }
+    },
+    "faq": {
+      "type": "section",
+      "name": "Questions answered",
+      "blocks": {
+        "faq_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Frequently Asked Questions</h2>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0",
+            "italic": false
+          },
+          "blocks": {}
+        },
+        "faq_list": {
+          "type": "group",
+          "name": "Questions",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "custom",
+            "custom_width": 92,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "open_in_new_tab": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "faq_accordion": {
+              "type": "accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "divider_color": "#3A664880",
+                "row_spacing": 24,
+                "type_preset": "h5",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "faq_1": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How long will my flowers last?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_1_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>With proper care, most arrangements last 4 to 7 days. A care guide comes with every delivery. Wrapped bouquets include a flower food packet to help them last longer.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_1_answer"
+                  ]
+                },
+                "faq_2": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Do I need to be home on delivery day?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_2_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>We send a message before we arrive. Someone needs to be home to receive the flowers, or leave a vase with water in a shaded area.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_2_answer"
+                  ]
+                },
+                "faq_3": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I add a personal message?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_3_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Yes. Add your message at checkout and we will include it with the delivery.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_3_answer"
+                  ]
+                },
+                "faq_4": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I change or cancel my order?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_4_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Need to change or cancel? Contact us at least 4 days before your delivery date.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_4_answer"
+                  ]
+                },
+                "faq_5": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "What is the delivery fee?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_5_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Zone 1: $30 (West LA, Beverly Hills, 90035 area, Pico Robertson, Beverlywood). Zone 2: $40 (Culver City, Mar Vista, Santa Monica, Century City, Westwood). Zone 3: $50 (Bel Air, Brentwood). Zone 4: $60 (Studio City, Sherman Oaks, Encino).</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_5_answer"
+                  ]
+                },
+                "faq_6": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "What if my flowers arrive damaged?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_6_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>If your arrangement arrives damaged or wilts within 24 hours, send us a photo and we will make it right.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_6_answer"
+                  ]
+                },
+                "faq_7": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I request specific flowers?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_7_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Answer to be confirmed.</p>",
+                        "text_color": "",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0,
+                        "max_lines": "0",
+                        "italic": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_7_answer"
+                  ]
+                }
+              },
+              "block_order": [
+                "faq_1",
+                "faq_2",
+                "faq_3",
+                "faq_4",
+                "faq_5",
+                "faq_6",
+                "faq_7"
+              ]
+            }
+          },
+          "block_order": [
+            "faq_accordion"
+          ]
+        }
+      },
+      "block_order": [
+        "faq_heading",
+        "faq_list"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 40,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "closing_cta": {
+      "type": "section",
+      "name": "Closing banner",
+      "blocks": {
+        "cta_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Prefer flowers every Friday?</h2>",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0",
+            "italic": false
+          },
+          "blocks": {}
+        },
+        "cta_link": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/subscribe\">Subscribe and never think about it again →</a></p>",
+            "text_color": "{{ settings.color_palette.color3 }}",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h6",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "max_lines": "0",
+            "italic": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "cta_heading",
+        "cta_link"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
     }
   },
   "order": [
     "hero",
     "compositions",
     "delivery",
-    "friday_table"
+    "friday_table",
+    "nefesh",
+    "flower_care",
+    "faq",
+    "closing_cta"
   ]
 }
