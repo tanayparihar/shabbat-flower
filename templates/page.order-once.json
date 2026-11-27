@@ -1,5 +1,11 @@
 /*
- * Order Once page. Assign this template to the page in Shopify admin.
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
@@ -10,7 +16,6 @@
           "type": "text",
           "settings": {
             "text": "<h1>For the table<br/>that has a reason</h1>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -21,6 +26,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -35,7 +41,6 @@
           "type": "text",
           "settings": {
             "text": "<p>For the person that deserves it</p>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -46,6 +51,7 @@
             "letter_spacing": "tight",
             "case": "none",
             "wrap": "balance",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -60,7 +66,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Order at least 3 days ahead. We deliver Fridays and Mondays.</p>",
-            "text_color": "",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "left",
@@ -71,6 +76,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -90,6 +96,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/hero_order_once.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -106,6 +113,9 @@
         "gap": 10,
         "section_width": "page-width",
         "section_height": "full-screen",
+        "text_above_media_on_mobile": true,
+        "media_position_x": 75,
+        "media_position_y": 50,
         "section_height_custom": 80,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
@@ -115,16 +125,11 @@
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 90,
-        "padding-block-end": 90,
-        "image_1": "shopify://shop_images/hero_order_once.jpg",
-        "media_position_x": 75,
-        "media_position_y": 50,
-        "text_above_media_on_mobile": true
+        "padding-block-end": 90
       }
     },
     "compositions": {
       "type": "product-list",
-      "name": "Choose your composition",
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
@@ -149,7 +154,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>What are you ordering for?</p>",
-                "text_color": "{{ settings.color_palette.color3 }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -160,15 +164,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color3 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0",
-                "italic": false
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -176,7 +181,6 @@
               "type": "text",
               "settings": {
                 "text": "<h2>Choose your composition</h2>",
-                "text_color": "{{ settings.color_palette.color1 }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -187,15 +191,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color1 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0",
-                "italic": false
+                "padding-inline-end": 0
               },
               "blocks": {}
             }
@@ -324,7 +329,6 @@
           "type": "text",
           "settings": {
             "text": "<p><a href=\"/pages/contact\">For events or bigger, custom orders please visit The Stem and The Flower consultation page. →</a></p>",
-            "text_color": "{{ settings.color_palette.color7 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -335,15 +339,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color7 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 20,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -351,6 +356,7 @@
       "block_order": [
         "grid_link"
       ],
+      "name": "Choose your composition",
       "settings": {
         "collection": "order-once",
         "layout_type": "grid",
@@ -363,24 +369,22 @@
         "rows_gap": 40,
         "icons_style": "chevron",
         "icons_shape": "circle",
+        "carousel_contained": false,
         "section_width": "page-width",
         "horizontal_alignment": "center",
         "gap": 64,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 100,
-        "padding-block-end": 100,
-        "carousel_contained": false
+        "padding-block-end": 100
       }
     },
     "delivery": {
       "type": "section",
-      "name": "Delivery information",
       "blocks": {
         "delivery_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Delivery across LA</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -391,15 +395,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 20,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -424,14 +429,14 @@
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
             "open_in_new_tab": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -458,29 +463,28 @@
                 "height": "fill",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
                 "open_in_new_tab": false,
                 "padding-block-start": 20,
                 "padding-block-end": 20,
                 "padding-inline-start": 20,
-                "padding-inline-end": 20,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 20
               },
               "blocks": {
                 "zone_1_label": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Zone 1</p>",
-                    "text_color": "{{ settings.color_palette.color3 }}",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -491,15 +495,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "{{ settings.color_palette.color3 }}",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -507,7 +512,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>$30</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -518,15 +522,16 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -534,7 +539,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>West LA, Beverly Hills, 90035 area, Pico Robertson, Beverlywood.</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -545,15 +549,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
@@ -583,29 +588,28 @@
                 "height": "fill",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
                 "open_in_new_tab": false,
                 "padding-block-start": 20,
                 "padding-block-end": 20,
                 "padding-inline-start": 20,
-                "padding-inline-end": 20,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 20
               },
               "blocks": {
                 "zone_2_label": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Zone 2</p>",
-                    "text_color": "{{ settings.color_palette.color3 }}",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -616,15 +620,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "{{ settings.color_palette.color3 }}",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -632,7 +637,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>$40</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -643,15 +647,16 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -659,7 +664,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>Culver City, Mar Vista, Santa Monica, Century City, Westwood.</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -670,15 +674,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
@@ -708,29 +713,28 @@
                 "height": "fill",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
                 "open_in_new_tab": false,
                 "padding-block-start": 20,
                 "padding-block-end": 20,
                 "padding-inline-start": 20,
-                "padding-inline-end": 20,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 20
               },
               "blocks": {
                 "zone_3_label": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Zone 3</p>",
-                    "text_color": "{{ settings.color_palette.color3 }}",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -741,15 +745,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "{{ settings.color_palette.color3 }}",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -757,7 +762,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>$50</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -768,15 +772,16 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -784,7 +789,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>Bel Air, Brentwood.</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -795,15 +799,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
@@ -833,29 +838,28 @@
                 "height": "fill",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 8,
                 "open_in_new_tab": false,
                 "padding-block-start": 20,
                 "padding-block-end": 20,
                 "padding-inline-start": 20,
-                "padding-inline-end": 20,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 20
               },
               "blocks": {
                 "zone_4_label": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Zone 4</p>",
-                    "text_color": "{{ settings.color_palette.color3 }}",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -866,15 +870,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "{{ settings.color_palette.color3 }}",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -882,7 +887,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>$60</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -893,15 +897,16 @@
                     "letter_spacing": "tight",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -909,7 +914,6 @@
                   "type": "text",
                   "settings": {
                     "text": "<p>Studio City, Sherman Oaks, Encino.</p>",
-                    "text_color": "",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -920,15 +924,16 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "italic": false,
+                    "max_lines": "0",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
-                    "padding-inline-end": 0,
-                    "max_lines": "0",
-                    "italic": false
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
@@ -951,7 +956,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Delivery days: Friday and Monday. Minimum 3 days notice.</p>",
-            "text_color": "",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -962,15 +966,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -980,6 +985,7 @@
         "delivery_zones",
         "delivery_note"
       ],
+      "name": "Delivery information",
       "settings": {
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
@@ -994,7 +1000,6 @@
     },
     "friday_table": {
       "type": "product-list",
-      "name": "Complete your Friday table",
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
@@ -1019,7 +1024,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>In collaboration with Oneg</p>",
-                "text_color": "{{ settings.color_palette.color3 }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -1030,15 +1034,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color3 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0",
-                "italic": false
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1046,7 +1051,6 @@
               "type": "text",
               "settings": {
                 "text": "<h2>Complete your Friday table</h2>",
-                "text_color": "{{ settings.color_palette.color1 }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -1057,15 +1061,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color1 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0",
-                "italic": false
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1073,7 +1078,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Handmade ritual pieces from Oneg Home, to style your Shabbat table alongside your flowers.<br/>Oneg items ship separately from New York, independent of the flower delivery.</p>",
-                "text_color": "",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -1084,15 +1088,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0",
-                "italic": false
+                "padding-inline-end": 0
               },
               "blocks": {}
             }
@@ -1179,12 +1184,12 @@
               "type": "product-button",
               "settings": {
                 "label": "Add to order",
+                "action": "add",
                 "style_class": "link",
                 "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 20,
-                "padding-inline-end": 20,
-                "action": "add"
+                "padding-inline-end": 20
               },
               "blocks": {}
             }
@@ -1197,7 +1202,7 @@
           ]
         }
       },
-      "block_order": [],
+      "name": "Complete your Friday table",
       "settings": {
         "collection": "oneg",
         "layout_type": "grid",
@@ -1210,18 +1215,17 @@
         "rows_gap": 32,
         "icons_style": "chevron",
         "icons_shape": "circle",
+        "carousel_contained": false,
         "section_width": "page-width",
         "horizontal_alignment": "center",
         "gap": 40,
         "background_color": "{{ settings.color_palette.color4 }}",
         "padding-block-start": 100,
-        "padding-block-end": 100,
-        "carousel_contained": false
+        "padding-block-end": 100
       }
     },
     "nefesh": {
       "type": "card-showcase",
-      "name": "Nefesh Jardin cards",
       "blocks": {
         "add_on": {
           "type": "card",
@@ -1242,6 +1246,7 @@
         "add_on",
         "welcome"
       ],
+      "name": "Nefesh Jardin cards",
       "settings": {
         "icon": "shopify://shop_images/Nefesh_Jardin_icon.svg",
         "label": "Nefesh Jardin",
@@ -1350,13 +1355,11 @@
     },
     "faq": {
       "type": "section",
-      "name": "Questions answered",
       "blocks": {
         "faq_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Frequently Asked Questions</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1367,15 +1370,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1400,14 +1404,14 @@
             "background_media": "none",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
             "open_in_new_tab": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -1446,7 +1450,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>With proper care, most arrangements last 4 to 7 days. A care guide comes with every delivery. Wrapped bouquets include a flower food packet to help them last longer.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1457,15 +1460,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1487,7 +1491,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>We send a message before we arrive. Someone needs to be home to receive the flowers, or leave a vase with water in a shaded area.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1498,15 +1501,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1528,7 +1532,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Yes. Add your message at checkout and we will include it with the delivery.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1539,15 +1542,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1569,7 +1573,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Need to change or cancel? Contact us at least 4 days before your delivery date.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1580,15 +1583,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1610,7 +1614,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Zone 1: $30 (West LA, Beverly Hills, 90035 area, Pico Robertson, Beverlywood). Zone 2: $40 (Culver City, Mar Vista, Santa Monica, Century City, Westwood). Zone 3: $50 (Bel Air, Brentwood). Zone 4: $60 (Studio City, Sherman Oaks, Encino).</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1621,15 +1624,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1651,7 +1655,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>If your arrangement arrives damaged or wilts within 24 hours, send us a photo and we will make it right.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1662,15 +1665,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1692,7 +1696,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Answer to be confirmed.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1703,15 +1706,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1741,6 +1745,7 @@
         "faq_heading",
         "faq_list"
       ],
+      "name": "Questions answered",
       "settings": {
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
@@ -1755,13 +1760,11 @@
     },
     "closing_cta": {
       "type": "section",
-      "name": "Closing banner",
       "blocks": {
         "cta_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Prefer flowers every Friday?</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1772,15 +1775,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1788,7 +1792,6 @@
           "type": "text",
           "settings": {
             "text": "<p><a href=\"/pages/subscribe\">Subscribe and never think about it again →</a></p>",
-            "text_color": "{{ settings.color_palette.color3 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1799,15 +1802,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color3 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -1816,6 +1820,7 @@
         "cta_heading",
         "cta_link"
       ],
+      "name": "Closing banner",
       "settings": {
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",

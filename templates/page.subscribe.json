@@ -1,5 +1,11 @@
 /*
- * Subscribe page. Assign this template to the page with the handle "subscribe" in Shopify admin.
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
@@ -10,7 +16,6 @@
           "type": "text",
           "settings": {
             "text": "<h1>The Friday feeling<br/>every week</h1>",
-            "text_color": "{{ settings.color_palette.color5 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -21,6 +26,9 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color5 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -35,7 +43,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Fresh flowers, arranged by Joanne, for the table that deserves them.</p>",
-            "text_color": "{{ settings.color_palette.color5 }}",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "left",
@@ -46,6 +53,9 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color5 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -74,17 +84,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 20,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -98,8 +112,14 @@
                 "link": "/pages/subscribe#build-subscription",
                 "open_in_new_tab": false,
                 "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
                 "width": "fit-content",
-                "width_mobile": "fit-content"
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             }
@@ -112,7 +132,6 @@
           "type": "text",
           "settings": {
             "text": "<p>If you’d like a one time delivery, visit <a href=\"/pages/order-once\"><strong>Order Once</strong></a>.</p>",
-            "text_color": "{{ settings.color_palette.color5 }}",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -123,6 +142,9 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color5 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -143,11 +165,13 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
+        "image_1": "shopify://shop_images/hero_subscription.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
+        "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -159,6 +183,9 @@
         "gap": 20,
         "section_width": "page-width",
         "section_height": "full-screen",
+        "text_above_media_on_mobile": false,
+        "media_position_x": 76,
+        "media_position_y": 50,
         "section_height_custom": 80,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
@@ -168,27 +195,11 @@
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 90,
-        "padding-block-end": 90,
-        "image_1": "shopify://shop_images/hero_subscription.jpg",
-        "media_position_x": 76,
-        "media_position_y": 50,
-        "text_above_media_on_mobile": false
+        "padding-block-end": 90
       }
     },
     "club_intro": {
       "type": "section",
-      "name": "What is Shabbat Flowers Club",
-      "settings": {
-        "content_direction": "column",
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
-        "section_width": "page-width",
-        "section_height": "",
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 100,
-        "padding-block-end": 0
-      },
       "blocks": {
         "club_content": {
           "type": "group",
@@ -209,17 +220,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -230,7 +245,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Shabbat Flowers Club delivers fresh hand arranged flowers every Friday across Los Angeles to anyone who loves what Friday means.</p>",
-                "text_color": "",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -241,14 +255,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "balance",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -256,7 +272,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>We deliver across select areas in Los Angeles. Check your area here.</p>",
-                "text_color": "",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -267,14 +282,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -296,17 +313,44 @@
       },
       "block_order": [
         "club_content"
-      ]
+      ],
+      "name": "What is Shabbat Flowers Club",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 0
+      }
     },
     "collections": {
       "type": "section",
-      "name": "Collections",
       "blocks": {
         "collections_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Choose your Friday collection</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -317,14 +361,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0"
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -346,17 +392,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -381,22 +431,25 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 8,
+                "link": "",
                 "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 0
               },
               "blocks": {
                 "colores_image": {
@@ -405,10 +458,16 @@
                     "image": "shopify://shop_images/Colores_De_temporada_abundant_Centerpiece_1.jpg",
                     "link": "/pages/subscribe#build-subscription",
                     "image_ratio": "adapt",
+                    "screen_height": 0,
                     "width": "fill",
+                    "custom_width": 100,
                     "width_mobile": "fill",
+                    "custom_width_mobile": 100,
                     "height": "fit",
                     "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
                     "border_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -435,17 +494,21 @@
                     "height": "fit",
                     "custom_height": 100,
                     "background_media": "none",
+                    "background_color": "",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
                     "open_in_new_tab": false,
+                    "placeholder": "",
                     "padding-block-start": 20,
                     "padding-block-end": 20,
                     "padding-inline-start": 20,
@@ -456,7 +519,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<h6>The seasonal collection</h6>",
-                        "text_color": "{{ settings.color_palette.color3 }}",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -467,14 +529,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.color3 }}",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -482,7 +546,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<h3>Colores de Temporada</h3>",
-                        "text_color": "{{ settings.color_palette.foreground }}",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -493,14 +556,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.foreground }}",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 10,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -508,7 +573,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>The best the market had that morning: the most beautiful, the freshest, the ones that caught Joanne’s eye first.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -519,14 +583,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -548,17 +614,21 @@
                         "height": "fit",
                         "custom_height": 100,
                         "background_media": "none",
+                        "background_color": "",
                         "video_position": "cover",
                         "background_image_position": "cover",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 0,
                         "toggle_overlay": false,
                         "overlay_color": "#00000026",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
+                        "link": "",
                         "open_in_new_tab": false,
+                        "placeholder": "",
                         "padding-block-start": 10,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -572,8 +642,14 @@
                             "link": "/pages/subscribe#build-subscription",
                             "open_in_new_tab": false,
                             "style_class": "button",
+                            "custom_button_background": "{{ settings.color_palette.foreground }}",
+                            "custom_button_text": "{{ settings.color_palette.background }}",
+                            "custom_button_border": "{{ settings.color_palette.background }}",
+                            "link_text_color": "",
                             "width": "fit-content",
-                            "width_mobile": "fit-content"
+                            "custom_width": 100,
+                            "width_mobile": "fit-content",
+                            "custom_width_mobile": 100
                           },
                           "blocks": {}
                         }
@@ -614,22 +690,25 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 8,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 8,
+                "link": "",
                 "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "background_color": "{{ settings.color_palette.color5 }}"
+                "padding-inline-end": 0
               },
               "blocks": {
                 "lavan_image": {
@@ -638,10 +717,16 @@
                     "image": "shopify://shop_images/Lavan_abundant_Centerpiece_1.jpg",
                     "link": "/pages/subscribe#build-subscription",
                     "image_ratio": "adapt",
+                    "screen_height": 0,
                     "width": "fill",
+                    "custom_width": 100,
                     "width_mobile": "fill",
+                    "custom_width_mobile": 100,
                     "height": "fit",
                     "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
                     "border_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -668,17 +753,21 @@
                     "height": "fit",
                     "custom_height": 100,
                     "background_media": "none",
+                    "background_color": "",
                     "video_position": "cover",
                     "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
                     "open_in_new_tab": false,
+                    "placeholder": "",
                     "padding-block-start": 20,
                     "padding-block-end": 20,
                     "padding-inline-start": 20,
@@ -689,7 +778,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<h6>The white collection</h6>",
-                        "text_color": "{{ settings.color_palette.color3 }}",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -700,14 +788,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.color3 }}",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -715,7 +805,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<h3>Lavan</h3>",
-                        "text_color": "{{ settings.color_palette.foreground }}",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -726,14 +815,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.foreground }}",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 10,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -741,7 +832,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Pure, considered, traditional. White flowers arranged with intention. For the table that holds something meaningful.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -752,14 +842,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0"
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     },
@@ -781,17 +873,21 @@
                         "height": "fit",
                         "custom_height": 100,
                         "background_media": "none",
+                        "background_color": "",
                         "video_position": "cover",
                         "background_image_position": "cover",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 0,
                         "toggle_overlay": false,
                         "overlay_color": "#00000026",
                         "overlay_style": "solid",
                         "gradient_direction": "to top",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
+                        "link": "",
                         "open_in_new_tab": false,
+                        "placeholder": "",
                         "padding-block-start": 10,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -805,8 +901,14 @@
                             "link": "/pages/subscribe#build-subscription",
                             "open_in_new_tab": false,
                             "style_class": "button",
+                            "custom_button_background": "{{ settings.color_palette.foreground }}",
+                            "custom_button_text": "{{ settings.color_palette.background }}",
+                            "custom_button_border": "{{ settings.color_palette.background }}",
+                            "link_text_color": "",
                             "width": "fit-content",
-                            "width_mobile": "fit-content"
+                            "custom_width": 100,
+                            "width_mobile": "fit-content",
+                            "custom_width_mobile": 100
                           },
                           "blocks": {}
                         }
@@ -839,9 +941,11 @@
           "type": "spacer",
           "settings": {
             "size": "pixel",
+            "percent_size": 100,
             "pixel_size": 60,
             "custom_mobile_size": true,
             "size_mobile": "pixel",
+            "percent_size_mobile": 100,
             "pixel_size_mobile": 0
           },
           "blocks": {}
@@ -852,14 +956,32 @@
         "collections_cards",
         "collections_spacer"
       ],
+      "name": "Collections",
       "settings": {
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 50,
         "section_width": "page-width",
         "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
         "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 100,
         "padding-block-end": 100
       }
@@ -919,24 +1041,28 @@
     },
     "gift_callout": {
       "type": "section",
-      "name": "Gift subscription",
       "blocks": {
         "gift_image": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/subscription_gift_image.jpg",
+            "link": "",
             "image_ratio": "adapt",
+            "screen_height": 0,
             "width": "custom",
             "custom_width": 60,
             "width_mobile": "fill",
+            "custom_width_mobile": 100,
             "height": "fit",
             "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
             "border_radius": 8,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "screen_height": 0
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -958,17 +1084,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -979,7 +1109,6 @@
               "type": "text",
               "settings": {
                 "text": "<h2>The gift that arrives every Friday</h2>",
-                "text_color": "{{ settings.color_palette.color1 }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -990,14 +1119,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color1 }}",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1028,7 +1159,6 @@
               "type": "text",
               "settings": {
                 "text": "<p><em>Receiver can manage skip, pause and change delivery address in their own subportal.</em></p>",
-                "text_color": "",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1039,14 +1169,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1054,7 +1186,6 @@
               "type": "text",
               "settings": {
                 "text": "<p><em>“I have a subscription going to my grandmother and that makes her super happy every week.”</em><br/><strong>EMILIO SMEKE</strong></p>",
-                "text_color": "",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1065,14 +1196,16 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0,
-                "max_lines": "0"
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1083,8 +1216,14 @@
                 "link": "/pages/gift-subscription",
                 "open_in_new_tab": false,
                 "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
                 "width": "fit-content",
-                "width_mobile": "fit-content"
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             }
@@ -1103,24 +1242,38 @@
         "gift_image",
         "gift_content"
       ],
+      "name": "Gift subscription",
       "settings": {
         "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 80,
         "section_width": "page-width",
         "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
         "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 100,
-        "padding-block-end": 100,
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center"
+        "padding-block-end": 100
       }
     },
     "nefesh": {
       "type": "card-showcase",
-      "name": "Nefesh Jardin cards",
       "blocks": {
         "add_on": {
           "type": "card",
@@ -1141,12 +1294,14 @@
         "add_on",
         "welcome"
       ],
+      "name": "Nefesh Jardin cards",
       "settings": {
-        "icon": "shopify://shop_images/Nefesh_Jardin_icon.svg",
+        "icon": "shopify://shop_images/Nefesh_Jardin_icon_70947b52-6806-4ebe-882d-5bbc63d2b2c2.svg",
         "label": "Nefesh Jardin",
         "heading": "What is Nefesh Jardin",
         "text": "<p>Joanne’s own creation, inspired by her background and her floristry.</p>",
         "link_label": "Visit the Nefesh Jardin shop",
+        "link": "",
         "background_color": "{{ settings.color_palette.background }}",
         "padding_start": 100,
         "padding_end": 100
@@ -1154,13 +1309,6 @@
     },
     "benefits": {
       "type": "benefit-list",
-      "settings": {
-        "image": "shopify://shop_images/subscription_gift_image.jpg",
-        "heading": "What you get as a subscriber",
-        "background_color": "{{ settings.color_palette.color4 }}",
-        "padding_start": 100,
-        "padding_end": 100
-      },
       "blocks": {
         "benefit_1": {
           "type": "benefit",
@@ -1204,7 +1352,14 @@
         "benefit_2",
         "benefit_3",
         "benefit_4"
-      ]
+      ],
+      "settings": {
+        "image": "shopify://shop_images/subscription_gift_image.jpg",
+        "heading": "What you get as a subscriber",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
     },
     "flower_care": {
       "type": "flower-care",
@@ -1303,7 +1458,6 @@
     },
     "reviews": {
       "type": "reviews",
-      "name": "What they say",
       "blocks": {
         "review_1": {
           "type": "review",
@@ -1326,9 +1480,11 @@
         "review_1",
         "review_2"
       ],
+      "name": "What they say",
       "settings": {
         "heading": "After the flowers arrive",
         "rating_label": "Rated 5.0 on Google Reviews",
+        "rating_link": "",
         "background_color": "{{ settings.color_palette.background }}",
         "star_color": "#f4b400",
         "padding_start": 100,
@@ -1337,13 +1493,11 @@
     },
     "faq": {
       "type": "section",
-      "name": "Questions answered",
       "blocks": {
         "faq_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Frequently Asked Questions</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1354,15 +1508,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0",
-            "italic": false
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1385,17 +1540,21 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
             "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -1407,12 +1566,15 @@
               "settings": {
                 "icon": "plus",
                 "dividers": true,
-                "divider_color": "#3A664880",
+                "divider_color": "#3a664880",
                 "row_spacing": 24,
                 "type_preset": "h5",
+                "background_color": "",
+                "text_color": "",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -1433,7 +1595,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>With the enclosed flower food and proper care, most arrangements last 4 to 7 days. A care guide comes with every delivery. If your flowers arrive damaged or wilt within 24 hours, send us a photo and we will make it right.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1444,15 +1605,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1474,7 +1636,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>We send a message before delivery. If you are not home, please leave a vase with water in a shaded spot or arrange for a neighbour to receive them.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1485,15 +1646,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1515,7 +1677,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Yes. Skip or pause any time, and cancel after your first 4 deliveries. Just let us know by Tuesday of that week and we will take care of it.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1526,15 +1687,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1556,7 +1718,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Yes. Contact us at least one week in advance, latest by Tuesday of the week before your next delivery. We will cancel and set up your new subscription.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1567,15 +1728,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1597,7 +1759,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Yes, any time. Change it yourself in your account portal, no need to contact us. Same Tuesday deadline applies if your next delivery is that Friday.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1608,15 +1769,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1638,7 +1800,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>Yes. A minimum of 4 deliveries before you can cancel.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1649,15 +1810,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1679,7 +1841,6 @@
                       "type": "text",
                       "settings": {
                         "text": "<p>For consultations, workshops, and special events, please visit our Consultations page.</p>",
-                        "text_color": "",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
@@ -1690,15 +1851,16 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
-                        "padding-inline-end": 0,
-                        "max_lines": "0",
-                        "italic": false
+                        "padding-inline-end": 0
                       },
                       "blocks": {}
                     }
@@ -1728,38 +1890,43 @@
         "faq_heading",
         "faq_list"
       ],
+      "name": "Questions answered",
       "settings": {
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 40,
         "section_width": "page-width",
         "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
         "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 100,
         "padding-block-end": 100
       }
     },
     "closing_cta": {
       "type": "section",
-      "name": "Closing banner",
-      "settings": {
-        "content_direction": "column",
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 20,
-        "section_width": "page-width",
-        "section_height": "",
-        "background_color": "{{ settings.color_palette.color4 }}",
-        "padding-block-start": 100,
-        "padding-block-end": 100
-      },
       "blocks": {
         "cta_heading": {
           "type": "text",
           "settings": {
             "text": "<h2>Your Friday table is waiting</h2>",
-            "text_color": "{{ settings.color_palette.color1 }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1770,14 +1937,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0"
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1785,7 +1954,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Hand arranged, delivered fresh, never the same twice.</p>",
-            "text_color": "",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1796,14 +1964,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0"
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1814,8 +1984,14 @@
             "link": "/pages/subscribe#build-subscription",
             "open_in_new_tab": false,
             "style_class": "button",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
             "width": "fit-content",
-            "width_mobile": "fit-content"
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
           },
           "blocks": {}
         },
@@ -1823,7 +1999,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Skip, pause or cancel any time after your first 4 deliveries.</p>",
-            "text_color": "",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1834,14 +2009,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0"
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
@@ -1849,7 +2026,6 @@
           "type": "text",
           "settings": {
             "text": "<p>If you’d like a one time delivery, visit <a href=\"/pages/order-once\">Order Once</a>.</p>",
-            "text_color": "",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1860,14 +2036,16 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "max_lines": "0"
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
@@ -1878,7 +2056,36 @@
         "cta_button",
         "cta_terms",
         "cta_order"
-      ]
+      ],
+      "name": "Closing banner",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
