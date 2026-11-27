@@ -26,6 +26,9 @@ const TARGETS = [
   '.card-showcase__card',
   '.flower-care__heading',
   '.flower-care__column',
+  '.benefit-list__media',
+  '.benefit-list__heading',
+  '.benefit-list__item',
 ].join(',');
 
 /* The hero animates with CSS; forms and dialogs must never be hidden */

@@ -96,7 +96,8 @@ Many sections repeat across pages (hero, How It Works, Flower Care, FAQ, CTA). B
 
 ## Open questions
 
-- **Subscription app is undecided** (Shopify Subscriptions, Recharge or Seal). It decides how the `/subscribe` and `/gift-subscription` builders are written. Until it's confirmed, build against Shopify's native selling plans and keep the app-specific parts isolated in one snippet.
+- **Subscription app is Recharge** (the client already uses it). Build the `/subscribe` and `/gift-subscription` builders for Recharge, and keep the app-specific parts isolated in one snippet.
+- **ZIP code checker comes from a third-party widget** the client hasn't chosen yet. Leave a swappable slot for it (app block or Custom Liquid) and don't build our own ZIP logic.
 - Navigation and footer content (menus, links) are not yet confirmed.
 
 ## Build order

@@ -250,6 +250,9 @@
     "show_physical_stores_help": "Navedite i lokacije označene kao fizički izlog koje imaju proizvod na zalihama, čak i kada ne nude preuzimanje."
   },
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -718,6 +721,7 @@
     "below_media": "Ispod medija"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",

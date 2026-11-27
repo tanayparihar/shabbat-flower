@@ -9,6 +9,9 @@
  */
 {
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -185,6 +188,7 @@
     "disclosures": "Ilmoitukset"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",

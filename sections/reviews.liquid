@@ -26,6 +26,7 @@
     --reviews-padding-start: {{ section_settings.padding_start }}px;
     --reviews-padding-end: {{ section_settings.padding_end }}px;
     --reviews-star-color: {{ section_settings.star_color }};
+    --reviews-columns: {{ review_blocks.size | at_least: 1 | at_most: 3 }};
   "
 >
   <div class="reviews__content">
@@ -209,7 +210,7 @@
 
   @media screen and (min-width: 990px) {
     .reviews__grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(var(--reviews-columns), minmax(0, 1fr));
       gap: 3.75rem 2.5rem;
       margin-block-start: 3rem;
     }

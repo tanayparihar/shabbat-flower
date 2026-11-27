@@ -250,6 +250,9 @@
     "show_physical_stores_help": "Kuva ka füüsiliseks müügikeskkonnaks märgitud asukohad, kus toode on laos, isegi kui seal ei pakuta järeletulemist."
   },
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -718,6 +721,7 @@
     "below_media": "Meedia all"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",

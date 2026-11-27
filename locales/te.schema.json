@@ -250,6 +250,9 @@
     "show_physical_stores_help": "పికప్‌ను అందించనప్పటికీ, ఉత్పత్తి స్టాక్‌లో ఉన్న భౌతిక స్టోర్‌ఫ్రంట్‌గా మార్క్ చేయబడిన లొకేషన్‌లను కూడా జాబితా చేయండి."
   },
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -718,6 +721,7 @@
     "below_media": "మీడియా దిగువన"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",

@@ -1,0 +1,72 @@
+{% doc %}
+  Renders a list of short points, each marked with a tick. The merchant writes
+  one point per line.
+
+  @example
+  {% content_for 'block', type: 'check-list', id: 'points' %}
+{% enddoc %}
+
+{% liquid
+  assign items = block.settings.items | newline_to_br | split: '<br />'
+%}
+
+<ul
+  class="check-list list-unstyled"
+  role="list"
+  {{ block.shopify_attributes }}
+>
+  {% for item in items %}
+    {% assign point = item | strip %}
+    {% if point != blank %}
+      <li class="check-list__item">{{ point | escape }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% stylesheet %}
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .check-list__item {
+    position: relative;
+    padding-inline-start: 1.875rem;
+  }
+
+  /* A tick drawn from two borders, so it needs no icon file */
+  .check-list__item::before {
+    content: '';
+    position: absolute;
+    inset-block-start: 0.4em;
+    inset-inline-start: 0.25rem;
+    width: 0.375rem;
+    height: 0.6875rem;
+    border: solid var(--color-brand-raspberry);
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:names.check_list",
+  "tag": null,
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "items",
+      "label": "t:settings.one_point_per_line"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:names.check_list",
+      "category": "t:categories.basic"
+    }
+  ]
+}
+{% endschema %}

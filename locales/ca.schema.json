@@ -250,6 +250,9 @@
     "show_physical_stores_help": "Mostra també les ubicacions marcades com a aparador físic que tenen el producte en estoc, encara que no ofereixin recollida."
   },
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -718,6 +721,7 @@
     "below_media": "Sota els elements multimèdia"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",

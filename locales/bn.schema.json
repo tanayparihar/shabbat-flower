@@ -250,6 +250,9 @@
     "show_physical_stores_help": "পিকআপ অফার না করলেও, ফিজিক্যাল স্টোরফ্রন্ট হিসেবে চিহ্নিত এবং পণ্যটি স্টকে আছে এমন লোকেশনগুলোও তালিকাভুক্ত করুন।"
   },
   "names": {
+    "benefit_list": "Benefit list",
+    "benefit": "Benefit",
+    "check_list": "Check list",
     "card_showcase": "Card showcase",
     "flower_care": "Flower care",
     "care_step": "Care step",
@@ -718,6 +721,7 @@
     "below_media": "মিডিয়ার নিচে"
   },
   "settings": {
+    "one_point_per_line": "Points, one per line",
     "row_spacing": "Row spacing",
     "caption": "Caption",
     "column": "Column",
