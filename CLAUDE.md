@@ -97,6 +97,9 @@ Many sections repeat across pages (hero, How It Works, Flower Care, FAQ, CTA). B
 ## Open questions
 
 - **Subscription app is Recharge** (the client already uses it). Build the `/subscribe` and `/gift-subscription` builders for Recharge, and keep the app-specific parts isolated in one snippet.
+- **Both builders are on hold until we have access to the client's account**, so they can be implemented against their Recharge app: "Build your subscription" (`/subscribe`) and "Build your gift" (`/gift-subscription`). Build every other section of those pages now. Until then the Subscribe buttons link to `/pages/subscribe#build-subscription`; the subscription builder needs that id. The Gift buttons link to `/pages/gift-subscription#build-gift`; the gift builder needs that id.
+  - Planned setup, to check against their account: Recharge on Shopify checkout (selling plans); one product per collection (Colores de Temporada, Lavan) with Presentation and Size variant options; frequency as selling plans; welcome card set and preferences saved on the order line.
+  - To confirm with the client: product setup, preferences fields, first delivery cut-off, four-delivery minimum (set in Recharge), and whether an unserved ZIP code blocks "Add to cart".
 - **ZIP code checker comes from a third-party widget** the client hasn't chosen yet. Leave a swappable slot for it (app block or Custom Liquid) and don't build our own ZIP logic.
 - Navigation and footer content (menus, links) are not yet confirmed.
 

@@ -1,0 +1,1943 @@
+/*
+ * Gift Subscription page. Assign this template to the page with the handle "gift-subscription" in Shopify admin.
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "hero_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Gift the Friday feeling</h1>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color5 }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hero_subtext": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fresh flowers, arranged by Joanne, sent as a gift, to anyone you choose</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1.375rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color5 }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 60,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "hero_actions": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 14,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 20,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "hero_subscribe": {
+              "type": "button",
+              "settings": {
+                "label": "Gift subscription",
+                "link": "/pages/gift-subscription#build-gift",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "hero_subscribe"
+          ]
+        }
+      },
+      "block_order": [
+        "hero_heading",
+        "hero_subtext",
+        "hero_actions"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/gift_subscription_hero.jpg",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-end",
+        "align_baseline": true,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "full-screen",
+        "text_above_media_on_mobile": false,
+        "media_position_x": 80,
+        "media_position_y": 50,
+        "section_height_custom": 80,
+        "background_color": "rgba(0,0,0,0)",
+        "toggle_overlay": false,
+        "overlay_color": "#1c1a1899",
+        "overlay_style": "gradient",
+        "gradient_direction": "to right",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 90,
+        "padding-block-end": 90
+      }
+    },
+    "club_intro": {
+      "type": "section",
+      "blocks": {
+        "club_content": {
+          "type": "group",
+          "name": "Introduction",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 40,
+            "width": "custom",
+            "custom_width": 62,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "club_statement": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Shabbat Flowers Club delivers fresh hand arranged flowers every Friday across Los Angeles to anyone who loves what Friday means.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.375rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "balance",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "zip_note": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We deliver across select areas in Los Angeles. Check your recipient’s area here.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.9375rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "zip_checker": {
+              "type": "custom-liquid",
+              "name": "ZIP checker widget",
+              "settings": {
+                "custom_liquid": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "club_statement",
+            "zip_note",
+            "zip_checker"
+          ]
+        }
+      },
+      "block_order": [
+        "club_content"
+      ],
+      "name": "What is Shabbat Flowers Club",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 0
+      }
+    },
+    "collections": {
+      "type": "section",
+      "blocks": {
+        "collections_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Choose your Friday collection</h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "collections_cards": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 52,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_colores": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 8,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "colores_image": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/Colores_De_temporada_abundant_Centerpiece_3.jpg",
+                    "link": "/pages/gift-subscription#build-gift",
+                    "image_ratio": "adapt",
+                    "screen_height": 0,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "colores_content": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 10,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "background_media": "none",
+                    "background_color": "",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 20,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 20,
+                    "padding-inline-end": 20
+                  },
+                  "blocks": {
+                    "colores_label": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h6>The seasonal collection</h6>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "h6",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.color3 }}",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "colores_title": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h3>Colores de Temporada</h3>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "h3",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.foreground }}",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 10,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "colores_description": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>The best the market had that morning: the most beautiful, the freshest, the ones that caught Joanne’s eye first. Warm, expressive, alive. Colour leads, the stems follow.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "colores_actions": {
+                      "type": "group",
+                      "settings": {
+                        "content_direction": "row",
+                        "vertical_on_mobile": false,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "flex-start",
+                        "vertical_alignment_flex_direction_column": "center",
+                        "gap": 14,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "custom_height": 100,
+                        "background_media": "none",
+                        "background_color": "",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 10,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "colores_subscribe": {
+                          "type": "button",
+                          "settings": {
+                            "label": "Gift subscription",
+                            "link": "/pages/gift-subscription#build-gift",
+                            "open_in_new_tab": false,
+                            "style_class": "button",
+                            "custom_button_background": "{{ settings.color_palette.foreground }}",
+                            "custom_button_text": "{{ settings.color_palette.background }}",
+                            "custom_button_border": "{{ settings.color_palette.background }}",
+                            "link_text_color": "",
+                            "width": "fit-content",
+                            "custom_width": 100,
+                            "width_mobile": "fit-content",
+                            "custom_width_mobile": 100
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "colores_subscribe"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "colores_label",
+                    "colores_title",
+                    "colores_description",
+                    "colores_actions"
+                  ]
+                }
+              },
+              "block_order": [
+                "colores_image",
+                "colores_content"
+              ]
+            },
+            "card_lavan": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 0,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "{{ settings.color_palette.color5 }}",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 8,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "lavan_image": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/Lavan_abundant_Centerpiece_3.jpg",
+                    "link": "/pages/gift-subscription#build-gift",
+                    "image_ratio": "adapt",
+                    "screen_height": 0,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "lavan_content": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": false,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 10,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "background_media": "none",
+                    "background_color": "",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 20,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 20,
+                    "padding-inline-end": 20
+                  },
+                  "blocks": {
+                    "lavan_label": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h6>The white collection</h6>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "h6",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.color3 }}",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "lavan_title": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h3>Lavan</h3>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "h3",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "{{ settings.color_palette.foreground }}",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 10,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "lavan_description": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Pure, considered, traditional. White flowers arranged with intention. For the table that holds something meaningful.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "paragraph",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    },
+                    "lavan_actions": {
+                      "type": "group",
+                      "settings": {
+                        "content_direction": "row",
+                        "vertical_on_mobile": false,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "center",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "flex-start",
+                        "vertical_alignment_flex_direction_column": "center",
+                        "gap": 14,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "custom_height": 100,
+                        "background_media": "none",
+                        "background_color": "",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "placeholder": "",
+                        "padding-block-start": 10,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "lavan_subscribe": {
+                          "type": "button",
+                          "settings": {
+                            "label": "Gift subscription",
+                            "link": "/pages/gift-subscription#build-gift",
+                            "open_in_new_tab": false,
+                            "style_class": "button",
+                            "custom_button_background": "{{ settings.color_palette.foreground }}",
+                            "custom_button_text": "{{ settings.color_palette.background }}",
+                            "custom_button_border": "{{ settings.color_palette.background }}",
+                            "link_text_color": "",
+                            "width": "fit-content",
+                            "custom_width": 100,
+                            "width_mobile": "fit-content",
+                            "custom_width_mobile": 100
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "lavan_subscribe"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "lavan_label",
+                    "lavan_title",
+                    "lavan_description",
+                    "lavan_actions"
+                  ]
+                }
+              },
+              "block_order": [
+                "lavan_image",
+                "lavan_content"
+              ]
+            }
+          },
+          "block_order": [
+            "card_colores",
+            "card_lavan"
+          ]
+        },
+        "collections_spacer": {
+          "type": "spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 60,
+            "custom_mobile_size": true,
+            "size_mobile": "pixel",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "collections_heading",
+        "collections_cards",
+        "collections_spacer"
+      ],
+      "name": "Collections",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 50,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "how_it_works": {
+      "type": "how-it-works",
+      "blocks": {
+        "step_collection": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step1_choose_collection.svg",
+            "title": "Choose your gift collection",
+            "description": "Colores de Temporada or Lavan."
+          }
+        },
+        "step_style": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_step2_choose_style.svg",
+            "title": "Pick style and size",
+            "description": "Wrapped bouquet or centrepiece. Size: Intimate, Abundant or Statement."
+          }
+        },
+        "step_arranged": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/HIW_gift_Flow_pick_Frequency.png",
+            "title": "Pick duration",
+            "description": "4 weeks, 8 weeks, 12 weeks, ongoing."
+          }
+        },
+        "step_delivery": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/Membership_Benefits_NJ_card_set.svg",
+            "title": "Add a personal message",
+            "description": "Pick craft paper or a botanical art card by Joanne."
+          }
+        }
+      },
+      "block_order": [
+        "step_collection",
+        "step_style",
+        "step_arranged",
+        "step_delivery"
+      ],
+      "settings": {
+        "eyebrow": "Your Friday flowers in 4 steps",
+        "heading": "How it works",
+        "button_label": "Gift subscription",
+        "button_link": "/pages/gift-subscription#build-gift",
+        "note": "Receiver can skip or pause any time.\nBuyer can cancel an ongoing subscription after the first 4 deliveries.",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
+    },
+    "benefits": {
+      "type": "benefit-list",
+      "blocks": {
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Membership_Benefits_Different_arrangement_every_time.svg",
+            "title": "Share your gift",
+            "text": "Twice a month, your recipient can send their delivery to someone else entirely, so the gift keeps moving, and the joy keeps spreading.",
+            "note": "Delivery address needs to be within delivery zones."
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Membership_Benefits_Shop_discount.svg",
+            "title": "10% off single orders",
+            "text": "10% off every bouquet you order outside your subscription.",
+            "note": ""
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Membership_Benefits_TS_TF_workshops_discount.svg",
+            "title": "10% off workshops",
+            "text": "10% discount on Joanne’s flower workshops and Floral Bars.",
+            "note": ""
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shopify://shop_images/Membership_Benefits_NJ_card_set.svg",
+            "title": "Welcome card set",
+            "text": "Nefesh Jardin editable digital welcome card set.",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/subscriber_benefits_porch.png",
+        "heading": "What you get as a subscriber",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
+    },
+    "nefesh": {
+      "type": "card-showcase",
+      "blocks": {
+        "add_on": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/x2_add_on_cards.png",
+            "caption": "Add on cards"
+          }
+        },
+        "welcome": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/free_card_sets.png",
+            "caption": "Welcome cards"
+          }
+        }
+      },
+      "block_order": [
+        "add_on",
+        "welcome"
+      ],
+      "name": "Nefesh Jardin cards",
+      "settings": {
+        "icon": "shopify://shop_images/Nefesh_Jardin_icon_70947b52-6806-4ebe-882d-5bbc63d2b2c2.svg",
+        "label": "Nefesh Jardin",
+        "heading": "What is Nefesh Jardin",
+        "text": "<p>Joanne’s own creation, inspired by her background and her floristry.</p>",
+        "link_label": "Visit the Nefesh Jardin shop",
+        "link": "",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding_start": 100,
+        "padding_end": 100
+      }
+    },
+    "friday_table": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 28,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "oneg_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>In collaboration with Oneg</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color3 }}",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "oneg_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Complete your Friday table</h2>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "oneg_text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Handmade ritual pieces from Oneg Home, to style your Shabbat table alongside your flowers.<br/>Oneg items ship separately from New York, independent of the flower delivery.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "italic": false,
+                "max_lines": "0",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "oneg_eyebrow",
+            "oneg_heading",
+            "oneg_text"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "background_color": "{{ settings.color_palette.color5 }}",
+            "border": "none",
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_image": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_radius": 8,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "card_title": {
+              "type": "product-title",
+              "settings": {
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.625rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "reserve_two_lines": false,
+                "text_color": "{{ settings.color_palette.foreground }}",
+                "background": false,
+                "corner_radius": 0,
+                "padding-block-start": 12,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_price": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "custom",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            },
+            "card_button": {
+              "type": "product-button",
+              "settings": {
+                "label": "Add to order",
+                "action": "add",
+                "style_class": "link",
+                "padding-block-start": 12,
+                "padding-block-end": 0,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "card_image",
+            "card_title",
+            "card_price",
+            "card_button"
+          ]
+        }
+      },
+      "name": "Complete your Friday table",
+      "settings": {
+        "collection": "oneg",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 3,
+        "columns": 3,
+        "mobile_columns": "1",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 32,
+        "rows_gap": 32,
+        "icons_style": "chevron",
+        "icons_shape": "circle",
+        "carousel_contained": false,
+        "section_width": "page-width",
+        "horizontal_alignment": "center",
+        "gap": 40,
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "flower_care": {
+      "type": "flower-care",
+      "blocks": {
+        "care_1": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_3.svg",
+            "lead": "Trim the stems.",
+            "text": "Remove rubber bands. Cut at an angle, removing at least 2cm."
+          }
+        },
+        "care_2": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_4.svg",
+            "lead": "Add the flower food.",
+            "text": "Dissolve the enclosed packet in the water. It feeds and protects your flowers best."
+          }
+        },
+        "care_3": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_6.svg",
+            "lead": "Choose the right spot.",
+            "text": "Away from direct sunlight, heat, air vents and the fruit bowl."
+          }
+        },
+        "care_4": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_5.svg",
+            "lead": "Change the water and refresh.",
+            "text": "Every two days. Re-trim stems. Remove wilting petals."
+          }
+        },
+        "care_5": {
+          "type": "step",
+          "settings": {
+            "column": "1",
+            "icon": "shopify://shop_images/Artboard_7.svg",
+            "lead": "Vase not included.",
+            "text": "Please have a vase ready before your flowers arrive."
+          }
+        },
+        "care_6": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_6.svg",
+            "lead": "Choose the right spot.",
+            "text": "Away from direct sunlight, heat, air vents and the fruit bowl."
+          }
+        },
+        "care_7": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_5.svg",
+            "lead": "Change the water.",
+            "text": "Every two days or keep adding water daily."
+          }
+        },
+        "care_8": {
+          "type": "step",
+          "settings": {
+            "column": "2",
+            "icon": "shopify://shop_images/Artboard_2.svg",
+            "lead": "Remove wilting petals.",
+            "text": "Check every few days and remove any petals that are past their best."
+          }
+        }
+      },
+      "block_order": [
+        "care_1",
+        "care_2",
+        "care_3",
+        "care_4",
+        "care_5",
+        "care_6",
+        "care_7",
+        "care_8"
+      ],
+      "settings": {
+        "heading": "How to make them last",
+        "column_1_title": "Wrapped Bouquet",
+        "column_2_title": "Centrepiece",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding_start": 100,
+        "padding_end": 40
+      }
+    },
+    "faq": {
+      "type": "section",
+      "blocks": {
+        "faq_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Frequently Asked Questions</h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "faq_list": {
+          "type": "group",
+          "name": "Questions",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "width": "custom",
+            "custom_width": 83,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "faq_accordion": {
+              "type": "accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "divider_color": "#3a664880",
+                "row_spacing": 24,
+                "type_preset": "h5",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "faq_1": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Do I need the recipient’s address now?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_1_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Answer to be confirmed.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_1_answer"
+                  ]
+                },
+                "faq_2": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Will the first delivery arrive on a date I choose, or the next Friday?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_2_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Your gift always arrives on a Friday. Order by Tuesday and the first delivery goes out this week, order any later and it starts the following Friday.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_2_answer"
+                  ]
+                },
+                "faq_3": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can the recipient change their own delivery address later?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_3_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Yes, twice a month the recipient can change the delivery address and send their gift to somebody else entirely.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_3_answer"
+                  ]
+                },
+                "faq_4": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can the recipient upgrade to their own ongoing subscription after the gift ends?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_4_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>They will need to buy a new regular subscription.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_4_answer"
+                  ]
+                },
+                "faq_5": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Can I extend or add more weeks to a gift I already sent?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_5_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Yes, just switch it to ongoing, or start a new fixed term once the current one ends.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_5_answer"
+                  ]
+                },
+                "faq_6": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Is there a minimum commitment before I can cancel?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_6_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Yes. A minimum of 4 deliveries before you can cancel.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_6_answer"
+                  ]
+                },
+                "faq_7": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "How does billing work for a gift subscription?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "faq_7_answer": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Gift subscriptions bill per delivery, monthly. Choose 4, 8, or 12 weeks and it ends automatically after that many deliveries, or choose ongoing and it continues until cancelled.</p>",
+                        "width": "100%",
+                        "max_width": "none",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "italic": false,
+                        "max_lines": "0",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "faq_7_answer"
+                  ]
+                }
+              },
+              "block_order": [
+                "faq_1",
+                "faq_2",
+                "faq_3",
+                "faq_4",
+                "faq_5",
+                "faq_6",
+                "faq_7"
+              ]
+            }
+          },
+          "block_order": [
+            "faq_accordion"
+          ]
+        }
+      },
+      "block_order": [
+        "faq_heading",
+        "faq_list"
+      ],
+      "name": "Questions answered",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 40,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
+    "closing_cta": {
+      "type": "section",
+      "blocks": {
+        "cta_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Give someone their own Friday feeling, every week.</h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "italic": false,
+            "max_lines": "0",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cta_button": {
+          "type": "button",
+          "settings": {
+            "label": "Gift subscription",
+            "link": "/pages/gift-subscription#build-gift",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "cta_heading",
+        "cta_button"
+      ],
+      "name": "Closing banner",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.color4 }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "club_intro",
+    "collections",
+    "how_it_works",
+    "benefits",
+    "nefesh",
+    "friday_table",
+    "flower_care",
+    "faq",
+    "closing_cta"
+  ]
+}
